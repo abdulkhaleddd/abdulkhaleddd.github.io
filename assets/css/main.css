@@ -606,3 +606,21 @@ footer::after {
 .contact-links li a:hover {
   color: var(--ink);
 }
+
+/* TOGGLE BESIDE SWATCHES */
+.theme-controls {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* FULL WIDTH PUZZLE EMBED */
+.puzzle-embed-box {
+  width: calc(100vw - 3rem);
+  max-width: 860px;
+  margin-left: calc(-1.75rem);
+  position: relative;
+}
+
+.puzzle-embed-box iframe {
+  height: 700px;
+}
