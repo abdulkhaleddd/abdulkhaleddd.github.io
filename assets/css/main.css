@@ -5,7 +5,7 @@
   --ink: #1c1208;
   --ink-light: #3d2e10;
   --ink-faint: #7a6640;
-  --red: #8b1a1a;
+  --accent: #8b1a1a;
   --sepia: #a0845c;
   --sepia-light: #c4a97d;
   --rule: #c4a97d;
@@ -19,6 +19,7 @@ body {
   font-family: 'Crimson Text', Georgia, serif;
   font-size: 18px;
   line-height: 1.7;
+  transition: background-color 0.3s ease, color 0.3s ease;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
 }
 
@@ -50,7 +51,7 @@ header::before {
 .site-title a { color: inherit; text-decoration: none; }
 
 .site-title span {
-  color: var(--red);
+  color: var(--accent);
   font-style: italic;
 }
 
@@ -84,7 +85,7 @@ nav a {
 }
 
 nav a:last-child { border-right: none; }
-nav a:hover, nav a.active { color: var(--red); }
+nav a:hover, nav a.active { color: var(--accent); }
 
 /* LAYOUT */
 .container {
@@ -151,7 +152,7 @@ nav a:hover, nav a.active { color: var(--red); }
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--accent);
   font-family: 'Crimson Text', serif;
   margin-bottom: 0.5rem;
   display: block;
@@ -182,7 +183,7 @@ h1.post-title { font-size: 2rem; margin-bottom: 1rem; }
   transition: color 0.2s;
 }
 
-.post-title a:hover { color: var(--red); }
+.post-title a:hover { color: var(--accent); }
 
 .post-excerpt {
   color: var(--ink-light);
@@ -224,7 +225,7 @@ h1.post-title { font-size: 2rem; margin-bottom: 1rem; }
 .read-more {
   font-family: 'IM Fell English', serif;
   font-style: italic;
-  color: var(--red);
+  color: var(--accent);
   text-decoration: none;
   font-size: 0.95rem;
   display: inline-flex;
@@ -261,7 +262,7 @@ h1.post-title { font-size: 2rem; margin-bottom: 1rem; }
   display: inline-block;
 }
 
-.pip.filled { background: var(--red); border-color: var(--red); }
+.pip.filled { background: var(--accent); border-color: var(--accent); }
 
 /* PUZZLE EMBED */
 .puzzle-embed-box {
@@ -328,7 +329,7 @@ h1.post-title { font-size: 2rem; margin-bottom: 1rem; }
   transition: color 0.2s;
 }
 
-.sidebar ul li a:hover { color: var(--red); }
+.sidebar ul li a:hover { color: var(--accent); }
 
 .sidebar ul li span {
   color: var(--sepia);
@@ -403,7 +404,7 @@ h1.post-title { font-size: 2rem; margin-bottom: 1rem; }
   transition: color 0.2s;
 }
 
-.archive-list li a:hover { color: var(--red); }
+.archive-list li a:hover { color: var(--accent); }
 
 /* FOOTER */
 footer {
@@ -418,7 +419,7 @@ footer {
 }
 
 footer a { color: var(--ink-faint); }
-footer a:hover { color: var(--red); }
+footer a:hover { color: var(--accent); }
 
 footer::after {
   content: '— ✦ —';
@@ -435,80 +436,15 @@ footer::after {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* DARK MODE */
-body.dark {
-  --paper: #1a1610;
-  --paper-dark: #211e17;
-  --paper-darker: #2e2a20;
-  --ink: #e8dfc8;
-  --ink-light: #c9bfa8;
-  --ink-faint: #8a7d65;
-  --red: #c47a5a;
-  --sepia: #9a8868;
-  --sepia-light: #7a6a50;
-  --rule: #4a4030;
-}
-
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* THEME TOGGLE BUTTON */
-.theme-toggle {
-  position: absolute;
-  top: 0.5rem;
-  right: 0;
-  background: none;
-  border: 1px solid var(--rule);
-  color: var(--ink-faint);
-  font-size: 1.1rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.2s, border-color 0.2s;
-  padding: 0;
-  line-height: 1;
-}
-
-.theme-toggle:hover {
-  color: var(--red);
-  border-color: var(--red);
-}
-
-/* SPOILER WARNING */
-.spoiler-warning {
-  font-family: 'IM Fell English', serif;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: var(--red);
-  border: 1px solid var(--red);
-  padding: 0.65rem 1rem;
-  margin: 1rem 0 1.5rem;
-  opacity: 0.85;
-}
-
-/* SOLUTIONS LINK BLOCK */
-.solutions-link-block {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--paper-darker);
-}
-
-.solutions-link {
-  font-size: 1rem;
-}
-
 /* THEME CONTROLS */
 .theme-controls {
   position: absolute;
-  top: 0.6rem;
+  top: 0.5rem;
   right: 0;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
 }
 
 .theme-toggle {
@@ -540,8 +476,8 @@ body {
 }
 
 .swatch {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 2px solid transparent;
   cursor: pointer;
@@ -550,9 +486,7 @@ body {
   flex-shrink: 0;
 }
 
-.swatch:hover {
-  transform: scale(1.2);
-}
+.swatch:hover { transform: scale(1.2); }
 
 .swatch.active {
   border-color: var(--accent);
@@ -562,4 +496,89 @@ body {
 @media (max-width: 500px) {
   .theme-controls { top: 0.4rem; }
   .swatch { width: 14px; height: 14px; }
+}
+
+/* SPOILER WARNING */
+.spoiler-warning {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.65rem 1rem;
+  margin: 1rem 0 1.5rem;
+  opacity: 0.85;
+}
+
+/* SOLUTIONS LINK BLOCK */
+.solutions-link-block {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--paper-darker);
+}
+
+.solutions-link { font-size: 1rem; }
+
+/* SOLUTIONS PAGE */
+.solutions-body { margin-top: 1.5rem; }
+
+.solutions-section { margin-bottom: 2.5rem; }
+
+.solutions-direction {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sepia);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.solution-entry {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px dotted var(--paper-darker);
+  align-items: start;
+}
+
+.solution-number {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+  padding-top: 0.1rem;
+  text-align: right;
+}
+
+.solution-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.solution-answer {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  letter-spacing: 0.03em;
+}
+
+.solution-clue {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: var(--ink-light);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.solution-breakdown {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  margin-top: 0.1rem;
+  font-style: normal;
 }
