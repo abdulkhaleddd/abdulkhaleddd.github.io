@@ -644,16 +644,19 @@ body.layout-puzzle .sidebar {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .theme-controls {
-    position: static;
+    position: static !important;
     justify-content: center;
     padding: 0.5rem 0 0;
     flex-direction: row-reverse;
   }
 
   header .container {
-    position: static;
+    position: static !important;
   }
+
+  .swatch { width: 14px; height: 14px; }
 }
+
 
