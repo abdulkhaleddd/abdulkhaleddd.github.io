@@ -1,0 +1,57 @@
+---
+layout: default
+title: Home
+---
+
+<div class="section-label">Latest Puzzles</div>
+
+{% assign puzzles = site.puzzles | sort: 'date' | reverse %}
+
+{% if puzzles.size > 0 %}
+  {% for puzzle in puzzles %}
+  <article class="post-card {% if forloop.first %}featured{% endif %}">
+    {% if forloop.first %}<span class="featured-badge">★ Latest puzzle</span>{% endif %}
+
+    <div class="post-meta">
+      No. {{ puzzle.number }} &ensp;·&ensp; {{ puzzle.date | date: "%B %Y" }} &ensp;·&ensp; {{ puzzle.grid_size | default: "15×15" }}
+    </div>
+
+    <h2 class="post-title">
+      <a href="{{ puzzle.url | relative_url }}">{{ puzzle.title }}</a>
+      {% if puzzle.difficulty %}
+      <span class="difficulty">
+        {% for i in (1..5) %}
+          {% if i <= puzzle.difficulty %}
+            <span class="pip filled"></span>
+          {% else %}
+            <span class="pip"></span>
+          {% endif %}
+        {% endfor %}
+      </span>
+      {% endif %}
+    </h2>
+
+    {% if puzzle.description %}
+    <p class="post-excerpt">{{ puzzle.description }}</p>
+    {% endif %}
+
+    {% if puzzle.tags %}
+    <div class="post-tags">
+      {% for tag in puzzle.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+
+    <a href="{{ puzzle.url | relative_url }}" class="read-more">Solve &amp; read notes →</a>
+  </article>
+  {% endfor %}
+
+{% else %}
+  <article class="post-card featured">
+    <span class="featured-badge">★ Coming soon</span>
+    <h2 class="post-title">First puzzle on its way</h2>
+    <p class="post-excerpt">
+      The site is live. The first puzzle is in the works.
+      Check back soon — or better yet, bookmark this page.
+    </p>
+  </article>
+{% endif %}

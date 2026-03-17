@@ -1,0 +1,35 @@
+title: Abdul's Cryptics
+tagline: "Original cryptic crosswords — set with care, solved at your peril"
+description: "Cryptic crosswords by Abdul. Original puzzles, occasional notes on construction."
+url: "https://abdulkhaleddd.github.io"
+baseurl: ""
+
+author: Abdul
+
+# Build
+markdown: kramdown
+permalink: /puzzles/:title/
+paginate: 6
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# Collections
+collections:
+  puzzles:
+    output: true
+    permalink: /puzzles/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "puzzles"
+    values:
+      layout: "puzzle"

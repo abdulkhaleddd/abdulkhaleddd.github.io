@@ -1,0 +1,42 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+
+<div class="section-label">All Puzzles</div>
+
+{% assign puzzles = site.puzzles | sort: 'date' | reverse %}
+{% assign posts = site.posts | sort: 'date' | reverse %}
+
+{% if puzzles.size > 0 %}
+<ul class="archive-list">
+  {% for puzzle in puzzles %}
+  <li>
+    <span class="date">{{ puzzle.date | date: "%b %Y" }}</span>
+    <a href="{{ puzzle.url | relative_url }}">No. {{ puzzle.number }} — {{ puzzle.title }}</a>
+    {% if puzzle.difficulty %}
+    <span class="difficulty" style="margin-left:auto;">
+      {% for i in (1..5) %}
+        {% if i <= puzzle.difficulty %}<span class="pip filled"></span>{% else %}<span class="pip"></span>{% endif %}
+      {% endfor %}
+    </span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p style="font-style:italic; color:var(--ink-faint);">No puzzles yet — first one coming soon.</p>
+{% endif %}
+
+{% if posts.size > 0 %}
+<div class="archive-year" style="margin-top:3rem;">Notes &amp; Writing</div>
+<ul class="archive-list">
+  {% for post in posts %}
+  <li>
+    <span class="date">{{ post.date | date: "%b %Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
