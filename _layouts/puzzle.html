@@ -60,4 +60,12 @@ layout: default
       <a href="{{ page.next.url }}" class="read-more" style="margin-left:auto;">Next puzzle →</a>
     {% endif %}
   </div>
+  <div class="comments-section">
+  <div class="section-label" style="margin-top:2rem;">Comments</div>
+  <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+  <hyvor-talk-comments
+    website-id="15160"
+    page-id="{{ page.url | absolute_url }}"
+  ></hyvor-talk-comments>
+</div>
 </article>
