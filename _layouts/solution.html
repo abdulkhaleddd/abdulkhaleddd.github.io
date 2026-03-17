@@ -14,40 +14,22 @@ layout: default
   </div>
 
   <div class="solutions-body">
-    {% if page.across %}
-    <div class="solutions-section">
-      <h2 class="solutions-direction">Across</h2>
-      {% for entry in page.across %}
-      <div class="solution-entry">
-        <span class="solution-number">{{ entry[0] }}</span>
-        <div class="solution-content">
-          <span class="solution-answer">{{ entry[1] }}</span>
-          <span class="solution-clue">{{ entry[2] }}</span>
-          <span class="solution-breakdown">{{ entry[3] }}</span>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if page.down %}
-    <div class="solutions-section">
-      <h2 class="solutions-direction">Down</h2>
-      {% for entry in page.down %}
-      <div class="solution-entry">
-        <span class="solution-number">{{ entry[0] }}</span>
-        <div class="solution-content">
-          <span class="solution-answer">{{ entry[1] }}</span>
-          <span class="solution-clue">{{ entry[2] }}</span>
-          <span class="solution-breakdown">{{ entry[3] }}</span>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
+    {{ content }}
   </div>
 
   <div class="post-nav">
     <a href="{{ '/puzzles/' | append: page.puzzle_slug | relative_url }}" class="read-more">← Back to puzzle</a>
   </div>
 </article>
+```
+
+And make sure your solution file front matter has the permalink line:
+```
+---
+layout: solution
+title: "Untitled No. 1"
+number: 1
+date: 2026-03-17
+puzzle_slug: "puzzle-001"
+permalink: /solutions/solution-001/
+---
