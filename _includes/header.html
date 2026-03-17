@@ -1,5 +1,8 @@
 <header>
-  <div class="container">
+  <div class="container" style="position:relative;">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="theme-icon">☽</span>
+    </button>
     <h1 class="site-title"><a href="{{ '/' | relative_url }}">Abdul's <span>Cryptics</span></a></h1>
     <p class="site-tagline">{{ site.tagline }}</p>
     <nav>
@@ -10,3 +13,22 @@
     </nav>
   </div>
 </header>
+
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const icon = toggle.querySelector('.theme-icon');
+
+  function applyTheme(dark) {
+    document.body.classList.toggle('dark', dark);
+    icon.textContent = dark ? '☀' : '☽';
+  }
+
+  const saved = localStorage.getItem('theme');
+  applyTheme(saved === 'dark');
+
+  toggle.addEventListener('click', () => {
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    applyTheme(!isDark);
+  });
+</script>
