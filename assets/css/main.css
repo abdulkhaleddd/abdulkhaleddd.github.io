@@ -434,3 +434,69 @@ footer::after {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* DARK MODE */
+body.dark {
+  --paper: #1a1610;
+  --paper-dark: #211e17;
+  --paper-darker: #2e2a20;
+  --ink: #e8dfc8;
+  --ink-light: #c9bfa8;
+  --ink-faint: #8a7d65;
+  --red: #c47a5a;
+  --sepia: #9a8868;
+  --sepia-light: #7a6a50;
+  --rule: #4a4030;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* THEME TOGGLE BUTTON */
+.theme-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--ink-faint);
+  font-size: 1.1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, border-color 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+/* SPOILER WARNING */
+.spoiler-warning {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--red);
+  border: 1px solid var(--red);
+  padding: 0.65rem 1rem;
+  margin: 1rem 0 1.5rem;
+  opacity: 0.85;
+}
+
+/* SOLUTIONS LINK BLOCK */
+.solutions-link-block {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--paper-darker);
+}
+
+.solutions-link {
+  font-size: 1rem;
+}
