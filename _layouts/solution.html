@@ -13,12 +13,41 @@ layout: default
     ⚠ Full annotations below. Only read on if you've finished the puzzle.
   </div>
 
-  <div class="post-body">
-    {{ content }}
+  <div class="solutions-body">
+    {% if page.across %}
+    <div class="solutions-section">
+      <h2 class="solutions-direction">Across</h2>
+      {% for entry in page.across %}
+      <div class="solution-entry">
+        <span class="solution-number">{{ entry[0] }}</span>
+        <div class="solution-content">
+          <span class="solution-answer">{{ entry[1] }}</span>
+          <span class="solution-clue">{{ entry[2] }}</span>
+          <span class="solution-breakdown">{{ entry[3] }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if page.down %}
+    <div class="solutions-section">
+      <h2 class="solutions-direction">Down</h2>
+      {% for entry in page.down %}
+      <div class="solution-entry">
+        <span class="solution-number">{{ entry[0] }}</span>
+        <div class="solution-content">
+          <span class="solution-answer">{{ entry[1] }}</span>
+          <span class="solution-clue">{{ entry[2] }}</span>
+          <span class="solution-breakdown">{{ entry[3] }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 
   <div class="post-nav">
-    {% assign puzzle_slug = page.puzzle_slug %}
-    <a href="{{ '/puzzles/' | append: puzzle_slug | relative_url }}" class="read-more">← Back to puzzle</a>
+    <a href="{{ '/puzzles/' | append: page.puzzle_slug | relative_url }}" class="read-more">← Back to puzzle</a>
   </div>
 </article>
