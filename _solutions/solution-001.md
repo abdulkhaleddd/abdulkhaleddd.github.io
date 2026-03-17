@@ -4,6 +4,7 @@ title: "Untitled No. 1"
 number: 1
 date: 2026-03-17
 puzzle_slug: "puzzle-001"
+permalink: /solutions/solution-001/
 ---
 <div class="solutions-section">
   <h2 class="solutions-direction">Across</h2>
