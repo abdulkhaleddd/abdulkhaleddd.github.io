@@ -28,13 +28,16 @@ layout: default
   <p class="post-excerpt">{{ page.description }}</p>
   {% endif %}
 
-  {% if page.embed_url %}
+  {% if page.embed %}
   <div class="puzzle-embed-box">
-    <iframe
-      src="{{ page.embed_url }}"
-      height="540"
-      title="{{ page.title }}">
-    </iframe>
+    {{ page.embed }}
+  </div>
+  {% endif %}
+
+  {% if content != "" %}
+  <div class="post-body">
+    <div class="section-label" style="margin-top:2rem;">Setter's Notes</div>
+    {{ content }}
   </div>
   {% endif %}
 
@@ -46,10 +49,13 @@ layout: default
   </div>
   {% endif %}
 
-  {% if content != "" %}
-  <div class="post-body">
-    <div class="section-label" style="margin-top:2rem;">Setter's Notes</div>
-    {{ content }}
+  {% if page.solution_slug %}
+  <div class="solutions-link-block">
+    <div class="section-label" style="margin-top:2rem;">Solutions</div>
+    <p class="post-excerpt" style="margin-bottom:0.75rem;">
+      Finished the puzzle? Annotations and full explanations are on the solutions page.
+    </p>
+    <a href="{{ '/solutions/' | append: page.solution_slug | relative_url }}" class="read-more solutions-link">View solutions →</a>
   </div>
   {% endif %}
 
