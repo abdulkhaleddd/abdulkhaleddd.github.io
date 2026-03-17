@@ -21,6 +21,9 @@ collections:
   puzzles:
     output: true
     permalink: /puzzles/:name/
+  solutions:
+    output: true
+    permalink: /solutions/:name/
 
 defaults:
   - scope:
