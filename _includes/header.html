@@ -1,0 +1,12 @@
+<header>
+  <div class="container">
+    <h1 class="site-title"><a href="{{ '/' | relative_url }}">Abdul's <span>Cryptics</span></a></h1>
+    <p class="site-tagline">{{ site.tagline }}</p>
+    <nav>
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Puzzles</a>
+      <a href="{{ '/archive/' | relative_url }}" {% if page.url contains 'archive' %}class="active"{% endif %}>Archive</a>
+      <a href="{{ '/notes/' | relative_url }}" {% if page.url contains 'notes' %}class="active"{% endif %}>Notes</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
+    </nav>
+  </div>
+</header>

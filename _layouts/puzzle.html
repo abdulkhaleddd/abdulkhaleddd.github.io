@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<article class="post-card featured single-post">
+  <div class="post-meta">
+    No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%B %Y" }} &ensp;·&ensp; {{ page.grid_size | default: "15×15" }}
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {% if page.difficulty %}
+  <div class="difficulty-row">
+    Difficulty:
+    <span class="difficulty">
+      {% for i in (1..5) %}
+        {% if i <= page.difficulty %}
+          <span class="pip filled"></span>
+        {% else %}
+          <span class="pip"></span>
+        {% endif %}
+      {% endfor %}
+    </span>
+  </div>
+  {% endif %}
+
+  {% if page.description %}
+  <p class="post-excerpt">{{ page.description }}</p>
+  {% endif %}
+
+  {% if page.embed_url %}
+  <div class="puzzle-embed-box">
+    <iframe
+      src="{{ page.embed_url }}"
+      height="540"
+      title="{{ page.title }}">
+    </iframe>
+  </div>
+  {% endif %}
+
+  {% if page.tags %}
+  <div class="post-tags">
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if content != "" %}
+  <div class="post-body">
+    <div class="section-label" style="margin-top:2rem;">Setter's Notes</div>
+    {{ content }}
+  </div>
+  {% endif %}
+
+  <div class="post-nav">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}" class="read-more">← Previous puzzle</a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url }}" class="read-more" style="margin-left:auto;">Next puzzle →</a>
+    {% endif %}
+  </div>
+</article>

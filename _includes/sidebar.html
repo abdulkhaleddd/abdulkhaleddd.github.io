@@ -1,0 +1,59 @@
+<aside class="sidebar">
+
+  <div class="sidebar-section">
+    <div class="about-portrait">◈</div>
+    <h3>About</h3>
+    <p>Cryptic crosswords set by Abdul — hobbyist compiler, occasional competitor, and lifelong solver. Puzzles appear here when they're ready, not before.</p>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Recent Puzzles</h3>
+    <ul>
+      {% assign puzzles = site.puzzles | sort: 'date' | reverse %}
+      {% for puzzle in puzzles limit:5 %}
+      <li>
+        <a href="{{ puzzle.url | relative_url }}">No. {{ puzzle.number }} — {{ puzzle.title }}</a>
+        <span>{{ puzzle.date | date: "%b %Y" }}</span>
+      </li>
+      {% endfor %}
+      {% if puzzles.size == 0 %}
+      <li><span style="font-style:italic;color:var(--ink-faint)">Puzzles coming soon</span></li>
+      {% endif %}
+    </ul>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Difficulty Key</h3>
+    <ul>
+      <li>
+        <span class="difficulty">
+          <span class="pip filled"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span>
+        </span>
+        &ensp; Gentle
+      </li>
+      <li>
+        <span class="difficulty">
+          <span class="pip filled"></span><span class="pip filled"></span><span class="pip filled"></span><span class="pip"></span><span class="pip"></span>
+        </span>
+        &ensp; Mid
+      </li>
+      <li>
+        <span class="difficulty">
+          <span class="pip filled"></span><span class="pip filled"></span><span class="pip filled"></span><span class="pip filled"></span><span class="pip filled"></span>
+        </span>
+        &ensp; Fiendish
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="grid-deco">
+      <div></div><div class="white"></div><div class="white"></div><div class="white"></div><div></div>
+      <div class="white"></div><div></div><div class="white"></div><div></div><div class="white"></div>
+      <div class="white"></div><div class="white"></div><div class="white"></div><div class="white"></div><div class="white"></div>
+      <div class="white"></div><div></div><div class="white"></div><div></div><div class="white"></div>
+      <div></div><div class="white"></div><div class="white"></div><div class="white"></div><div></div>
+    </div>
+  </div>
+
+</aside>
