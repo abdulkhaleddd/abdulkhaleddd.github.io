@@ -1,14 +1,11 @@
 ---
 layout: default
 ---
-
 <article class="post-card featured single-post">
   <div class="post-meta">
     No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%B %Y" }} &ensp;·&ensp; {{ page.grid_size | default: "15×15" }}
   </div>
-
   <h1 class="post-title">{{ page.title }}</h1>
-
   {% if page.difficulty %}
   <div class="difficulty-row">
     Difficulty:
@@ -23,24 +20,21 @@ layout: default
     </span>
   </div>
   {% endif %}
-
-  {% if page.description %}
-  <p class="post-excerpt">{{ page.description }}</p>
+  {% assign parts = content | split: '<!--notes-->' %}
+  {% if parts[0] != "" %}
+  <div class="post-excerpt">{{ parts[0] }}</div>
   {% endif %}
-
   {% if page.embed %}
   <div class="puzzle-embed-box">
     {{ page.embed }}
   </div>
   {% endif %}
-
-  {% if content != "" %}
+  {% if parts[1] and parts[1] != "" %}
   <div class="post-body">
     <div class="section-label" style="margin-top:2rem;">Setter's Notes</div>
-    {{ content }}
+    {{ parts[1] }}
   </div>
   {% endif %}
-
   {% if page.tags %}
   <div class="post-tags">
     {% for tag in page.tags %}
@@ -48,17 +42,15 @@ layout: default
     {% endfor %}
   </div>
   {% endif %}
-
   {% if page.solution_slug %}
   <div class="solutions-link-block">
     <div class="section-label" style="margin-top:2rem;">Solutions</div>
     <p class="post-excerpt" style="margin-bottom:0.75rem;">
-      Finished the puzzle? Annotations and full explanations are on the solutions page.
+      Finished the puzzle, or stuck? Annotations and full explanations are on the solutions page.
     </p>
     <a href="{{ '/solutions/' | append: page.solution_slug | relative_url }}" class="read-more solutions-link">View solutions →</a>
   </div>
   {% endif %}
-
   <div class="post-nav">
     {% if page.previous %}
       <a href="{{ page.previous.url }}" class="read-more">← Previous puzzle</a>
