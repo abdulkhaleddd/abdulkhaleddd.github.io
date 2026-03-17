@@ -6,7 +6,7 @@ permalink: /archive/
 
 <div class="section-label">All Puzzles</div>
 
-{% assign puzzles = site.puzzles | sort: 'date' | reverse %}
+{% assign puzzles = site.puzzles | sort: 'number' | reverse %}
 {% assign posts = site.posts | sort: 'date' | reverse %}
 
 {% if puzzles.size > 0 %}
