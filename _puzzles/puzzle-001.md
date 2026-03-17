@@ -13,5 +13,4 @@ tags: [Cryptic, 15×15]
 This is my first publication on <a href="https://www.mycrossword.co.uk/AbdulK" target="_blank">MyCrossword</a>, as well as this website!
 
 <!--notes-->
-
-Setter's notes go here.
+Hope you enjoyed! A few here might've been a bit tricky — especially 27A, 19D, and 23D. My favourites were 22D, 23D, 24A, and 25A! Let me know your favourites on my <a href="https://bsky.app/profile/abdvl.bsky.social" target="_blank">Bluesky!</a>
