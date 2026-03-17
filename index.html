@@ -5,7 +5,7 @@ title: Home
 
 <div class="section-label">Latest Puzzles</div>
 
-{% assign puzzles = site.puzzles | sort: 'date' | reverse %}
+{% assign puzzles = site.puzzles | sort: 'number' | reverse %}
 
 {% if puzzles.size > 0 %}
   {% for puzzle in puzzles %}
