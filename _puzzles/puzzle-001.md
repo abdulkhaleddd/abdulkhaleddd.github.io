@@ -11,4 +11,4 @@ embed: '<iframe height="700px" width="100%" allow="web-share; fullscreen" style=
 tags: [Cryptic, 15×15]
 ---
 
-Setter's notes go here. The puzzle embed appears above this automatically.
+This is my first publication on 'MyCrossword', as well as this website! You can find my 'MyCrossword' page in the 'About' section of the website.
