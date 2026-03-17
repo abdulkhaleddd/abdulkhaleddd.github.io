@@ -4,7 +4,7 @@ layout: default
 <script>document.body.classList.add('layout-puzzle');</script>
 <article class="post-card featured single-post">
   <div class="post-meta">
-    No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%B %Y" }} &ensp;·&ensp; {{ page.grid_size | default: "15×15" }}
+    No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%d %B %Y" }} &ensp;·&ensp; {{ page.grid_size | default: "15×15" }}
   </div>
   <h1 class="post-title">{{ page.title }}</h1>
   {% if page.difficulty %}
