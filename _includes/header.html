@@ -145,20 +145,17 @@
     });
   }
 
-  const savedPalette = localStorage.getItem('palette') || 'parchment';
-  const savedDark    = localStorage.getItem('dark') === 'true';
-  applyTheme(savedPalette, savedDark);
-
   document.addEventListener('DOMContentLoaded', function() {
-    const darkBtn = document.getElementById('darkToggle');
-    if (darkBtn) {
-      darkBtn.addEventListener('click', () => {
-        const isDark = document.body.classList.contains('dark');
-        const palette = localStorage.getItem('palette') || 'parchment';
-        localStorage.setItem('dark', String(!isDark));
-        applyTheme(palette, !isDark);
-      });
-    }
+    const savedPalette = localStorage.getItem('palette') || 'parchment';
+    const savedDark    = localStorage.getItem('dark') === 'true';
+    applyTheme(savedPalette, savedDark);
+
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      const isDark  = document.body.classList.contains('dark');
+      const palette = localStorage.getItem('palette') || 'parchment';
+      localStorage.setItem('dark', String(!isDark));
+      applyTheme(palette, !isDark);
+    });
 
     document.querySelectorAll('.swatch').forEach(swatch => {
       swatch.addEventListener('click', () => {
