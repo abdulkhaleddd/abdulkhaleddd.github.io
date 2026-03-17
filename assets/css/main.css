@@ -632,3 +632,28 @@ body.layout-puzzle .page-body {
 body.layout-puzzle .sidebar {
   display: none;
 }
+
+/* MOBILE PUZZLE EMBED */
+@media (max-width: 600px) {
+  .puzzle-embed-box {
+    padding: 0;
+  }
+  
+  .puzzle-embed-box iframe {
+    height: 100svh;
+  }
+}
+
+@media (max-width: 500px) {
+  .theme-controls {
+    position: static;
+    justify-content: center;
+    padding: 0.5rem 0 0;
+    flex-direction: row-reverse;
+  }
+
+  header .container {
+    position: static;
+  }
+}
+
