@@ -623,3 +623,12 @@ footer::after {
 .puzzle-embed-box iframe {
   height: 700px;
 }
+
+/* HIDE SIDEBAR ON PUZZLE PAGES */
+body.layout-puzzle .page-body {
+  grid-template-columns: 1fr;
+}
+
+body.layout-puzzle .sidebar {
+  display: none;
+}
