@@ -607,17 +607,16 @@ footer::after {
   color: var(--ink);
 }
 
-/* TOGGLE BESIDE SWATCHES */
+/* TOGGLE BESIDE SWATCHES — moon on right */
 .theme-controls {
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
-/* FULL WIDTH PUZZLE EMBED */
+/* FULL WIDTH PUZZLE EMBED — centred */
 .puzzle-embed-box {
-  width: calc(100vw - 3rem);
-  max-width: 860px;
-  margin-left: calc(-1.75rem);
+  width: 100%;
+  margin-left: 0;
   position: relative;
 }
 
