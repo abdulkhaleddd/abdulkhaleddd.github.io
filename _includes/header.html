@@ -10,6 +10,7 @@
         <button class="swatch" data-theme="slate" title="Slate" style="background:#e8edf2;"></button>
         <button class="swatch" data-theme="forest" title="Forest" style="background:#eef2eb;"></button>
         <button class="swatch" data-theme="noir" title="Noir" style="background:#1a1a1a;border:1px solid #444;"></button>
+        <button class="swatch" data-theme="pink" title="Pink" style="background:#fdf0f3;border:1px solid #eeccd5;"></button>
       </div>
     </div>
 
@@ -131,6 +132,33 @@ dark: {
         '--rule':         '#333330',
       }
     }
+    ,
+pink: {
+  light: {
+    '--paper':        '#fdf0f3',
+    '--paper-dark':   '#f7e0e6',
+    '--paper-darker': '#eeccd5',
+    '--ink':          '#2a1018',
+    '--ink-light':    '#4a2030',
+    '--ink-faint':    '#9a6070',
+    '--accent':       '#b04060',
+    '--sepia':        '#c07888',
+    '--sepia-light':  '#e0a8b8',
+    '--rule':         '#e0a8b8',
+  },
+  dark: {
+    '--paper':        '#1a0810',
+    '--paper-dark':   '#251018',
+    '--paper-darker': '#341820',
+    '--ink':          '#fce8ee',
+    '--ink-light':    '#e0b8c4',
+    '--ink-faint':    '#a06878',
+    '--accent':       '#e88aa0',
+    '--sepia':        '#904858',
+    '--sepia-light':  '#4a1828',
+    '--rule':         '#4a1828',
+  }
+}
   };
 
   function applyTheme(palette, dark) {
