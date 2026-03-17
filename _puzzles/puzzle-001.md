@@ -2,7 +2,7 @@
 layout: puzzle
 title: "Untitled No. 1"
 number: 1
-date: 2026-03-17
+date: 2026-03-16
 grid_size: "15×15"
 difficulty: 3
 solution_slug: "solution-001"
