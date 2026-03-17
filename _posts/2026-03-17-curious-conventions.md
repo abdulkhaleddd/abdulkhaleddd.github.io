@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On Writing Fair Cryptic Clues"
+title: "Curious Conventions"
 date: 2026-03-17
 tags: [Craft, Clue-writing]
 ---
