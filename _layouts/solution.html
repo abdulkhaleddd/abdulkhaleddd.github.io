@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post-card featured single-post">
+  <div class="post-meta">
+    Solutions &ensp;·&ensp; No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%B %Y" }}
+  </div>
+
+  <h1 class="post-title">{{ page.title }} — Solutions</h1>
+
+  <div class="spoiler-warning">
+    ⚠ Full annotations below. Only read on if you've finished the puzzle.
+  </div>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <div class="post-nav">
+    {% assign puzzle_slug = page.puzzle_slug %}
+    <a href="{{ '/puzzles/' | append: puzzle_slug | relative_url }}" class="read-more">← Back to puzzle</a>
+  </div>
+</article>
