@@ -40,7 +40,7 @@ permalink: /solutions/solution-002/
     <span class="solution-number">11</span>
     <div class="solution-content">
       <span class="solution-answer">TORPEDO</span>
-      <span class="solution-clue"><u>Eradicate</u> or overthrow corruption, and spread joy regularly (7)</span>
+      <span class="solution-clue"><u>Eradicate</u> or overthrow corruption, and spread joy every second (7)</span>
       <span class="solution-breakdown">[ROT]&lt; + [sPrEaD jOy] — Reverse of ROT + alternating letters of SPREAD JOY</span>
     </div>
   </div>
@@ -49,7 +49,7 @@ permalink: /solutions/solution-002/
     <span class="solution-number">12</span>
     <div class="solution-content">
       <span class="solution-answer">UNIFORM</span>
-      <span class="solution-clue"><u>Like</u> you 'n' I, sort of (7)</span>
+      <span class="solution-clue">You 'n' I type <u>alike</u> (7)</span>
       <span class="solution-breakdown">U + N + I + FORM — You→U, N, I, sort of = a form of</span>
     </div>
   </div>
@@ -179,7 +179,7 @@ permalink: /solutions/solution-002/
   <div class="solution-entry">
     <span class="solution-number">6</span>
     <div class="solution-content">
-      <span class="solution-answer">PERKUP</span>
+      <span class="solution-answer">PERK UP</span>
       <span class="solution-clue"><u>Raise</u> a drink, hear hear (6)</span>
       <span class="solution-breakdown">[PER CUP]~[PERK UP] — A = per, drink = cup, homophone of PERK UP</span>
     </div>
