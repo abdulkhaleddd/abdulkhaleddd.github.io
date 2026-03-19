@@ -1,7 +1,7 @@
 ---
 layout: puzzle
 title: "Untitled No. 2"
-number: 1
+number: 2
 date: 2026-03-19
 grid_size: "15×15"
 difficulty: 3
