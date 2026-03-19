@@ -6,7 +6,6 @@ date: 2026-03-19
 puzzle_slug: "puzzle-002"
 permalink: /solutions/solution-002/
 ---
-```html
 <div class="solutions-section">
   <h2 class="solutions-direction">Across</h2>
 
@@ -277,4 +276,3 @@ permalink: /solutions/solution-002/
   </div>
 
 </div>
-```
