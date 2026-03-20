@@ -199,7 +199,7 @@ permalink: /solutions/solution-002/
     <div class="solution-content">
       <span class="solution-answer">WORTH</span>
       <span class="solution-clue">One cold abandoned witch stole Oscar's coat and <u>money</u> (5)</span>
-      <span class="solution-breakdown">W[it]{OR}CH — WITCH minus IT, containing outer letters of Oscar (OR)</span>
+      <span class="solution-breakdown">W[i]{OR}[c]TH — WITCH minus IC, containing outer letters of Oscar (OR)</span>
     </div>
   </div>
 
