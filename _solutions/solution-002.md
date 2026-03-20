@@ -31,7 +31,7 @@ permalink: /solutions/solution-002/
     <span class="solution-number">10</span>
     <div class="solution-content">
       <span class="solution-answer">RETREAT</span>
-      <span class="solution-clue">Run! Red alien! Red alien's abducting adult (7)</span>
+      <span class="solution-clue">Run! Run! Alien! Run! Alien's abducting adult (7)</span>
       <span class="solution-breakdown">R + ET + RE{A}T — R + ET (alien) twice, containing A for adult</span>
     </div>
   </div>
@@ -198,7 +198,7 @@ permalink: /solutions/solution-002/
     <span class="solution-number">9</span>
     <div class="solution-content">
       <span class="solution-answer">WORTH</span>
-      <span class="solution-clue">Witch lost it, stealing Oscar's coat and <u>money</u> (5)</span>
+      <span class="solution-clue">One cold abandoned witch stole Oscar's coat and <u>money</u> (5)</span>
       <span class="solution-breakdown">W[it]{OR}CH — WITCH minus IT, containing outer letters of Oscar (OR)</span>
     </div>
   </div>
