@@ -217,7 +217,7 @@ permalink: /solutions/solution-002/
     <div class="solution-content">
       <span class="solution-answer">RESPITE</span>
       <span class="solution-clue"><u>Calm</u> nap ended, initially interrupted by one pursuing piano (7)</span>
-      <span class="solution-breakdown">RES{PI}TE — REST contains P (piano) + I (one)</span>
+      <span class="solution-breakdown">RES{PI}T + E — REST + E (ended initially) contains P (piano) + I (one)</span>
     </div>
   </div>
 
