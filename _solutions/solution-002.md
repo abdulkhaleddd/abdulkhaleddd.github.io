@@ -22,7 +22,7 @@ permalink: /solutions/solution-002/
     <span class="solution-number">7</span>
     <div class="solution-content">
       <span class="solution-answer">BREACHED</span>
-      <span class="solution-clue"><u>Broke</u> bread after missing a date caused pain (8)</span>
+      <span class="solution-clue"><u>Broke</u> bread after missing a date hurt (8)</span>
       <span class="solution-breakdown">BRE[ad] + ACHED — Bread with A and D removed, followed by ACHED</span>
     </div>
   </div>
