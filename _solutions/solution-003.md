@@ -270,8 +270,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">22</span>
     <div class="solution-content">
       <span class="solution-answer">SORRY</span>
-      <span class="solution-clue">Mournful beginning of 'Sense and Sensibility' ultimately encapsulates even poorer characters (5)</span>
-      <span class="solution-breakdown">S {pOoReR} Y — beginning of (S)ense and end of Sensibilit(y) encapsulating even letters of poorer</span>
+      <span class="solution-clue">Mournful beginning of 'Sense and Sensibility' ultimately introduces even poorer characters (5)</span>
+      <span class="solution-breakdown">S {pOoReR} Y — beginning of (S)ense and end of Sensibilit(y) covering even letters of poorer</span>
     </div>
   </div>
 
