@@ -162,8 +162,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">1</span>
     <div class="solution-content">
       <span class="solution-answer">CHOKE</span>
-      <span class="solution-clue">Close church? Fine by central priests (5)</span>
-      <span class="solution-breakdown">CH + OK + [cz]E[ch] — (CH)urch + OK (fine) + centre of priEsts </span>
+      <span class="solution-clue">Close chapter and endorse first part of Emma (5)</span>
+      <span class="solution-breakdown">CH + OK + E — (CH)urch + OK (endorse) + E (first part of Emma) </span>
     </div>
   </div>
 
