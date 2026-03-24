@@ -8,6 +8,7 @@ author: Abdul
 
 # Build
 markdown: kramdown
+future: true
 permalink: /puzzles/:title/
 paginate: 6
 paginate_path: "/page:num/"
