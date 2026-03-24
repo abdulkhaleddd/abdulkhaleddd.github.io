@@ -198,7 +198,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">6</span>
     <div class="solution-content">
       <span class="solution-answer">EMBARGO</span>
-      <span class="solution-clue">Check from business graduate consequently received (7)</span>
+      <span class="solution-clue">Blacklist business graduate consequently received (7)</span>
       <span class="solution-breakdown">E{MBA}RGO — MBA (business graduate) in ERGO (consequently)</span>
     </div>
   </div>
