@@ -1,10 +1,10 @@
 ---
 layout: solution
-title: "Untitled No. 1"
-number: 1
-date: 2026-03-19
+title: "Untitled No. 3"
+number: 3
+date: 2026-03-27
 puzzle_slug: "puzzle-001"
-permalink: /solutions/solution-001/
+permalink: /solutions/solution-003/
 ---
 <div class="solutions-section">
   <h2 class="solutions-direction">Across</h2>
