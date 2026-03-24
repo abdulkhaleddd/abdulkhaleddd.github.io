@@ -261,8 +261,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">21</span>
     <div class="solution-content">
       <span class="solution-answer">SWOON</span>
-      <span class="solution-clue">Drop show's curtains before Othello's vacation near Nicosia initially (5)</span>
-      <span class="solution-breakdown">S[ho]W + O[thell]O + N — outer letter of show + 'o + o' outer letters of Othello + N (first letter of 'Nicosia'</span>
+      <span class="solution-clue">Drop show's curtains before Othello's vacation East of Lebanon (5)</span>
+      <span class="solution-breakdown">S[ho]W + O[thell]O + N — outer letter of show + 'o + o' outer letters of Othello + N (Easternmost (right) letter of Lebano(n)</span>
     </div>
   </div>
 
