@@ -270,8 +270,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">22</span>
     <div class="solution-content">
       <span class="solution-answer">SORRY</span>
-      <span class="solution-clue">Beginning of 'Sense and Sensibility' ultimately having men right sad (5)</span>
-      <span class="solution-breakdown">S{OR + R}Y — beginning of (S)ense and Sensibilit(y) ultimately has OR (men, other ranks) + (R)ight</span>
+      <span class="solution-clue">Mournful first chapter of 'Sense and Sensibility' ultimately draws in men beginning to read (5)</span>
+      <span class="solution-breakdown">S {OR + R} Y — beginning of (S)ense and end of Sensibilit(y) drawing in OR (men, other ranks) + beginning to (r)</span>
     </div>
   </div>
 
