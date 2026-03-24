@@ -121,7 +121,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">23</span>
     <div class="solution-content">
       <span class="solution-answer">ENVELOP</span>
-      <span class="solution-clue">Briefly resent Polish person flipping house (7)</span>
+      <span class="solution-clue">Resent contracted Polish person flipping house (7)</span>
       <span class="solution-breakdown">ENV[y] + [POLE]&lt; — ENVY with last letter removed, Polish person (POLE) reversed</span>
     </div>
   </div>
