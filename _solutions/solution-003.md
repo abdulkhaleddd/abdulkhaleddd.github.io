@@ -243,7 +243,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">17</span>
     <div class="solution-content">
       <span class="solution-answer">SATIETY</span>
-      <span class="solution-clue">A second over match, tourney's empty after being filled (7)</span>
+      <span class="solution-clue">A second over match, tourney's empty after being filled? (7)</span>
       <span class="solution-breakdown">[A + S]&lt; -> [S + A] + [TIE] + [T[ourne]Y] — (A) (S)econd reversed + MATCH (TIE) + outside letters of TOURNEY</span>
     </div>
   </div>
@@ -270,8 +270,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">22</span>
     <div class="solution-content">
       <span class="solution-answer">SORRY</span>
-      <span class="solution-clue">Mournful first chapter of 'Sense and Sensibility' ultimately draws in men beginning to read (5)</span>
-      <span class="solution-breakdown">S {OR + R} Y — beginning of (S)ense and end of Sensibilit(y) drawing in OR (men, other ranks) + beginning to (r)</span>
+      <span class="solution-clue">Mournful beginning of 'Sense and Sensibility' ultimately encapsulates even poorer characters (5)</span>
+      <span class="solution-breakdown">S {pOoReR} Y — beginning of (S)ense and end of Sensibilit(y) encapsulating even letters of poorer</span>
     </div>
   </div>
 
