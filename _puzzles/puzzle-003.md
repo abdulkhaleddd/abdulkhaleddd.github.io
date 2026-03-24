@@ -12,4 +12,4 @@ tags: [Cryptic, 15×15]
 This is my third grid, currently in testing! If you prefer to solve on MyCrossword, you can find the puzzle link <a href="https://www.mycrossword.co.uk/preview/57298-hpyqa" target="_blank">here.</a> 
 
 <!--notes-->
-I think some will find this the hardest of my puzzles — there is more usage of multiple letterplay/wordplay mechanisms in single clues, and some substitutions are tough. I hope you enjoyed nonetheless Let me know your favourites through my <a href="https://bsky.app/profile/abdvl.bsky.social" target="_blank">Bluesky.</a> 
+I think some will find this the hardest of my puzzles — there is more usage of multiple letterplay/wordplay mechanisms in single clues, and some substitutions are tough. I hope you enjoyed it nonetheless! Let me know your favourites through my <a href="https://bsky.app/profile/abdvl.bsky.social" target="_blank">Bluesky.</a> 
