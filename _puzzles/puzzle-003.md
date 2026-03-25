@@ -1,6 +1,6 @@
 ---
 layout: puzzle
-title: "By the Book [TESTING]"
+title: "No. 3: By the Book [TESTING]"
 number: 3
 date: 2026-03-27
 grid_size: "15×15"
