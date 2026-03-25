@@ -139,8 +139,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">25</span>
     <div class="solution-content">
       <span class="solution-answer">DAY ONE</span>
-      <span class="solution-clue">Beginning closure — retired over a year ago at last (3,3)</span>
-      <span class="solution-breakdown">[END]&lt; + A + Y + O -> D{A}{Y}{O}NE</span>
+      <span class="solution-clue">Begin do over: Jay's head shaved, with new cut (3,3)</span>
+      <span class="solution-breakdown">[D{[j]AY}O + NE[w] — 'do' over 'ay' with trimmed 'new'</span>
     </div>
   </div>
 
