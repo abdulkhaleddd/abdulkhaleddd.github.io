@@ -6,7 +6,7 @@ date: 2026-03-27
 grid_size: "15×15"
 difficulty: 5
 solution_slug: "solution-003"
-embed: '<iframe height="700px" width="100%" allow="web-share; fullscreen" style="border:none; width: 100% !important; position: static;display: block !important; margin: 0 !important;" src="https://puzzleme.amuselabs.com/pmm/crossword?id=b9ffcd85&set=c894b0730a2cca68d97e1ace51faaefa43e00a77d5602ec4e7ed4f98904af969&embed=1" aria-label="Puzzle Me Game"> </iframe>'
+embed: '<iframe height="700px" width="100%" allow="web-share; fullscreen" style="border:none; width: 100% !important; position: static;display: block !important; margin: 0 !important;" src="https://puzzleme.amuselabs.com/pmm/crossword?id=e91a6de3&set=c894b0730a2cca68d97e1ace51faaefa43e00a77d5602ec4e7ed4f98904af969&embed=1" aria-label="Puzzle Me Game"> </iframe>'
 tags: [Cryptic, 15×15]
 ---
 This is my third grid, currently in testing! As it is in testing, you will find that edits will be made consistently until release. If you prefer to solve on MyCrossword, you can find the puzzle link <a href="https://www.mycrossword.co.uk/preview/57298-hpyqa" target="_blank">here.</a> 
