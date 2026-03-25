@@ -68,7 +68,7 @@ permalink: /solutions/solution-003/
     <div class="solution-content">
       <span class="solution-answer">CREDO</span>
       <span class="solution-clue">Persuasion read, lacking leading character bores actor every second (5)</span>
-      <span class="solution-breakdown">[aCtOr] -> C{RE[a]D}O — alternate letters of actor, and insert READ without A in CO (company)</span>
+      <span class="solution-breakdown">[aCtOr] -> C{RE[a]D}O — alternate letters of actor, and insert READ without A</span>
     </div>
   </div>
 
