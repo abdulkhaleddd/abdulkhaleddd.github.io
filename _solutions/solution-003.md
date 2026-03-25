@@ -1,9 +1,9 @@
 ---
 layout: solution
-title: "Untitled No. 3"
-number: 3
-date: 2026-03-27
-puzzle_slug: "puzzle-001"
+title: "No. 3: By the Book"
+number: 1
+date: 2026-03-28
+puzzle_slug: "puzzle-003"
 permalink: /solutions/solution-003/
 ---
 <div class="solutions-section">
@@ -31,8 +31,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">8</span>
     <div class="solution-content">
       <span class="solution-answer">POVERTY</span>
-      <span class="solution-clue">Want poetry novel including verse (7)</span>
-      <span class="solution-breakdown">(PO{V}ETRY)* — anagram poetry around (V)erse</span>
+      <span class="solution-clue">Want poetry's tense to shift, framing verse (7)</span>
+      <span class="solution-breakdown">(PO{V}ER[T]Y)* — shift T in poetry, put it around (V)erse</span>
     </div>
   </div>
 
@@ -40,8 +40,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">9</span>
     <div class="solution-content">
       <span class="solution-answer">GAMBLER</span>
-      <span class="solution-clue">Better golf putter, right? (7)</span>
-      <span class="solution-breakdown">G + AMBLE + R — (G)olf (NATO) + AMBLE (putter) + (R)ight</span>
+      <span class="solution-clue">Golf, walk, and run to get better (7)</span>
+      <span class="solution-breakdown">G + AMBLE + R — (G)olf (NATO) + AMBLE (walk) + (R)un</span>
     </div>
   </div>
 
@@ -49,8 +49,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">11</span>
     <div class="solution-content">
       <span class="solution-answer">REFINEMENT</span>
-      <span class="solution-clue">Education, rent, overwhelming energy tax facing me (10)</span>
-      <span class="solution-breakdown">R{ E + FINE + ME} ENT — RENT around E + tax (FINE) + ME</span>
+      <span class="solution-clue">Urbanity's rent, overwhelming charge facing me (10)</span>
+      <span class="solution-breakdown">RE{FINE + ME}NT — RENT around + tax (FINE) + ME</span>
     </div>
   </div>
 
@@ -67,8 +67,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">CREDO</span>
-      <span class="solution-clue">'Persuasion' read out, lead character bores actor occasionally (5)</span>
-      <span class="solution-breakdown">[aCtOr] -> C{RE[a]D}O — alternate letters of actor, and insert READ without A</span>
+      <span class="solution-clue">Persuasion read, lacking leading character bores actor every second (5)</span>
+      <span class="solution-breakdown">[aCtOr] -> C{RE[a]D}O — alternate letters of actor, and insert READ without A in CO (company)</span>
     </div>
   </div>
 
@@ -76,8 +76,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">14</span>
     <div class="solution-content">
       <span class="solution-answer">SEASONAL</span>
-      <span class="solution-clue">A boy gets stuck in adhesive, it's recurrent (8)</span>
-      <span class="solution-breakdown">SE{ASON}AL — A son (a boy) inside seal (adhesive)</span>
+      <span class="solution-clue">A boy gets devoured by sea lion's mouth every summer? (8)</span>
+      <span class="solution-breakdown">SE{ASON}AL — A son (a boy) inside sea + lion's top, 'every summer?' is DBE, if something is every summer it is seasonal</span>
     </div>
   </div>
 
@@ -85,7 +85,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">16</span>
     <div class="solution-content">
       <span class="solution-answer">IN A SWEAT</span>
-      <span class="solution-clue">Windy throughout China's weather (2,1,5)</span>
+      <span class="solution-clue">China's weather partly windy (2,1,5)</span>
       <span class="solution-breakdown">[ChINA'S WEATher] — hidden in China's weather</span>
     </div>
   </div>
@@ -94,8 +94,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">18</span>
     <div class="solution-content">
       <span class="solution-answer">SAVES</span>
-      <span class="solution-clue">Stores with bars (5)</span>
-      <span class="solution-breakdown">Double def — 'STORES' to keep, 'BARS' to exclude</span>
+      <span class="solution-clue">Rescues from bodies of water flowing back, gaining velocity (5)</span>
+      <span class="solution-breakdown">[SEAS]&lt; -> SA{V}ES — seas reversing, containing (V)elocity</span>
     </div>
   </div>
 
@@ -112,7 +112,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">21</span>
     <div class="solution-content">
       <span class="solution-answer">SHEER BLISS</span>
-      <span class="solution-clue">He's ribless, created in heaven (5,5)</span>
+      <span class="solution-clue">He's ribless, molded in heaven (5,5)</span>
       <span class="solution-breakdown">(HESRIBLESS)* — anagram of 'he's ribless'</span>
     </div>
   </div>
@@ -121,8 +121,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">23</span>
     <div class="solution-content">
       <span class="solution-answer">ENVELOP</span>
-      <span class="solution-clue">Resent contracted Polish person flipping house (7)</span>
-      <span class="solution-breakdown">ENV[y] + [POLE]&lt; — ENVY with last letter removed, Polish person (POLE) reversed</span>
+      <span class="solution-clue">Resent short fellow from Warsaw lying around blanket (7)</span>
+      <span class="solution-breakdown">ENV[y] + [POLE]&lt; — ENVY with last letter removed, fellow from Warsaw (POLE) reversed</span>
     </div>
   </div>
 
@@ -130,7 +130,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">24</span>
     <div class="solution-content">
       <span class="solution-answer">BIZARRE</span>
-      <span class="solution-clue">Business with collection of rare rum (7)</span>
+      <span class="solution-clue">Business with assortment of rare rum (7)</span>
       <span class="solution-breakdown">BIZ + (RARE)* — BIZ (business) + anagram of RARE to give rum, British slang for 'bizarre'</span>
     </div>
   </div>
@@ -139,8 +139,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">25</span>
     <div class="solution-content">
       <span class="solution-answer">DAY ONE</span>
-      <span class="solution-clue">Start do over: Jay's head shaved, with new cut (3,3)</span>
-      <span class="solution-breakdown">[D{[j]AY}O + NE[w] — 'do' over 'ay' with trimmed 'new'</span>
+      <span class="solution-clue">Start do over, shaving Jay's head with new cut (3,3)</span>
+      <span class="solution-breakdown">D{[j]AY}O + NE[w] — 'do' over 'ay' with trimmed 'new'</span>
     </div>
   </div>
 
@@ -148,7 +148,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">26</span>
     <div class="solution-content">
       <span class="solution-answer">MERELY</span>
-      <span class="solution-clue">Just made a comeback in freestyle rematch (6)</span>
+      <span class="solution-clue">Just making a comeback in freestyle rematch (6)</span>
       <span class="solution-breakdown">[freestYLE REMatch] — merely reversed hidden in freestyle rematch</span>
     </div>
   </div>
@@ -162,8 +162,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">1</span>
     <div class="solution-content">
       <span class="solution-answer">CHOKE</span>
-      <span class="solution-clue">Close chapter and endorse first part of 'Emma' (5)</span>
-      <span class="solution-breakdown">CH + OK + E — (CH)urch + OK (endorse) + E (first part of Emma) </span>
+      <span class="solution-clue">Close chapter and endorse first part of Emma (5)</span>
+      <span class="solution-breakdown">CH + OK + E — (CH)apter + OK (endorse) + E (first part of Emma)</span>
     </div>
   </div>
 
@@ -189,8 +189,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">5</span>
     <div class="solution-content">
       <span class="solution-answer">UNAPT</span>
-      <span class="solution-clue">"You new? A part-timer?" "Incorrect." (5)</span>
-      <span class="solution-breakdown">U + N + A + PT — Yo(u) + (n)ew + a + pt (part-time/part-timer often referred to as PT)</span>
+      <span class="solution-clue">Texting "You sleep with shirt? Improper" (5)</span>
+      <span class="solution-breakdown">YOU->U + NAP + T — txtspk 'you->u' with NAP (sleep) + T (shirt)</span>
     </div>
   </div>
 
@@ -198,7 +198,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">6</span>
     <div class="solution-content">
       <span class="solution-answer">EMBARGO</span>
-      <span class="solution-clue">Blacklist business graduate consequently received (7)</span>
+      <span class="solution-clue">Ban business graduate consequently received (7)</span>
       <span class="solution-breakdown">E{MBA}RGO — MBA (business graduate) in ERGO (consequently)</span>
     </div>
   </div>
@@ -208,7 +208,7 @@ permalink: /solutions/solution-003/
     <div class="solution-content">
       <span class="solution-answer">SHED TEARS</span>
       <span class="solution-clue">Demolish a hot dessert, and let it all out (4,5)</span>
-      <span class="solution-breakdown">(A + H + DESERT)* — anagram of a + (h)ot + desert</span>
+      <span class="solution-breakdown">(A + H + DESSERT)* — anagram of a + (h)ot + dessert</span>
     </div>
   </div>
 
@@ -216,7 +216,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">10</span>
     <div class="solution-content">
       <span class="solution-answer">JET-SETTER</span>
-      <span class="solution-clue">Juliet and I welcomed in alien visitor (3-6)</span>
+      <span class="solution-clue">Juliet and I to welcome in alien traveller (3-6)</span>
       <span class="solution-breakdown">J{ET} + SETTER — (J)uliet + I (setter) around ET (alien)</span>
     </div>
   </div>
@@ -225,8 +225,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">CONDEMNED</span>
-      <span class="solution-clue">Cheated, stealing recalled medication being unauthorized (9)</span>
-      <span class="solution-breakdown">[CON{DEM}NED] — CHEATED [CONNED] around reversed MED/span>
+      <span class="solution-clue">Cheated, stealing recalled medication being declared unsafe (9)</span>
+      <span class="solution-breakdown">CON{MED&lt;}NED — CHEATED [CONNED] around reversed MED</span>
     </div>
   </div>
 
@@ -243,8 +243,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">17</span>
     <div class="solution-content">
       <span class="solution-answer">SATIETY</span>
-      <span class="solution-clue">A second over match, tourney's empty after being filled? (7)</span>
-      <span class="solution-breakdown">[A + S]&lt; -> [S + A] + [TIE] + [T[ourne]Y] — (A) (S)econd reversed + MATCH (TIE) + outside letters of TOURNEY</span>
+      <span class="solution-clue">Filled state with a second left-leaning couple — try ditching Republican (7)</span>
+      <span class="solution-breakdown">[A + S]&lt; -> [S + A] + [TIE] + [T[r]Y] — (A) (S)econd reversed + BOND (TIE) + TRY without R</span>
     </div>
   </div>
 
@@ -261,8 +261,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">21</span>
     <div class="solution-content">
       <span class="solution-answer">SWOON</span>
-      <span class="solution-clue">Drop show's curtains before Othello's gutted one's stomach</span>
-      <span class="solution-breakdown">S[ho]W + O[thell]O + N — outer letter of show + 'o + o' outer letters of Othello + center of one</span>
+      <span class="solution-clue">Drop show's curtains before Othello's gutted one's stomach (5)</span>
+      <span class="solution-breakdown">S[ho]W + O[thell]O + N — outer letters of show + outer letters of Othello + center of one</span>
     </div>
   </div>
 
@@ -270,8 +270,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">22</span>
     <div class="solution-content">
       <span class="solution-answer">SORRY</span>
-      <span class="solution-clue">Mournful beginning of 'Sense and Sensibility' ultimately introduces even poorer characters (5)</span>
-      <span class="solution-breakdown">S {pOoReR} Y — beginning of (S)ense and end of Sensibilit(y) covering even letters of poorer</span>
+      <span class="solution-clue">Mournful beginning of Sense and Sensibility ultimately introduces even poorer characters (5)</span>
+      <span class="solution-breakdown">S{pOoReR}Y — beginning of (S)ense and end of Sensibilit(y) encapsulating even letters of poorer</span>
     </div>
   </div>
 
