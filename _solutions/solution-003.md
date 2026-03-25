@@ -225,8 +225,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">CONDEMNED</span>
-      <span class="solution-clue">Cheated, purchasing degree with English money, getting reprimanded (9)</span>
-      <span class="solution-breakdown">CON{D}{E}{M}NED — CHEATED [CONNED] around (D)egree (E)nglish (M)oney</span>
+      <span class="solution-clue">Cheated, stealing revolutionary medication being unauthorized (9)</span>
+      <span class="solution-breakdown">[CON{MED}<NED] — CHEATED [CONNED] around reversed MED</span>
     </div>
   </div>
 
