@@ -2,7 +2,7 @@
 layout: puzzle
 title: "No. 3: By the Book [TESTING]"
 number: 3
-date: 2026-03-27
+date: 2026-03-29
 grid_size: "15×15"
 difficulty: 5
 solution_slug: "solution-003"
