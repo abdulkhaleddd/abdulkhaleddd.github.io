@@ -226,7 +226,7 @@ permalink: /solutions/solution-003/
     <div class="solution-content">
       <span class="solution-answer">CONDEMNED</span>
       <span class="solution-clue">Cheated, stealing revolutionary medication being unauthorized (9)</span>
-      <span class="solution-breakdown">[CON{MED}<NED] — CHEATED [CONNED] around reversed MED</span>
+      <span class="solution-breakdown">[CON{DEM}NED] — CHEATED [CONNED] around reversed MED/span>
     </div>
   </div>
 
