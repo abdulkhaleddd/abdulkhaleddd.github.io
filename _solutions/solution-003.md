@@ -40,8 +40,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">9</span>
     <div class="solution-content">
       <span class="solution-answer">GAMBLER</span>
-      <span class="solution-clue">Golf, walk, and run to get better (7)</span>
-      <span class="solution-breakdown">G + AMBLE + R — (G)olf (NATO) + AMBLE (walk) + (R)un (cricket)</span>
+      <span class="solution-clue">Better golf putter, right? (7)</span>
+      <span class="solution-breakdown">G + AMBLE + R — (G)olf (NATO) + AMBLE (putter) + (R)ight</span>
     </div>
   </div>
 
@@ -49,8 +49,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">11</span>
     <div class="solution-content">
       <span class="solution-answer">REFINEMENT</span>
-      <span class="solution-clue">Education and rent overwhelming her friend Emma every second (10)</span>
-      <span class="solution-breakdown">[hEr FrIeNd EmMa] in RENT -> R{EFINEM}ENT — every second letter of 'her friend Emma' inserted in 'rent'</span>
+      <span class="solution-clue">Education, rent, overwhelming energy tax facing me (10)</span>
+      <span class="solution-breakdown">R{ E + FINE + ME} ENT — RENT around E + tax (FINE) + ME</span>
     </div>
   </div>
 
@@ -162,7 +162,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">1</span>
     <div class="solution-content">
       <span class="solution-answer">CHOKE</span>
-      <span class="solution-clue">Close chapter and endorse first part of Emma (5)</span>
+      <span class="solution-clue">Close chapter and endorse first part of 'Emma' (5)</span>
       <span class="solution-breakdown">CH + OK + E — (CH)urch + OK (endorse) + E (first part of Emma) </span>
     </div>
   </div>
