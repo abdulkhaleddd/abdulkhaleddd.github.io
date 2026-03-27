@@ -31,7 +31,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">8</span>
     <div class="solution-content">
       <span class="solution-answer">POVERTY</span>
-      <span class="solution-clue">Want poetry's tense to shift, framing verse (7)</span>
+      <span class="solution-clue">Want poetry's tense to shift while framing verse (7)</span>
       <span class="solution-breakdown">(PO{V}ER[T]Y)* — shift T in poetry, put it around (V)erse</span>
     </div>
   </div>
@@ -49,8 +49,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">11</span>
     <div class="solution-content">
       <span class="solution-answer">REFINEMENT</span>
-      <span class="solution-clue">Urbanity's rent, overwhelming charge facing me (10)</span>
-      <span class="solution-breakdown">RE{FINE + ME}NT — RENT around + tax (FINE) + ME</span>
+      <span class="solution-clue">Elegance of ten firemen working (10)</span>
+      <span class="solution-breakdown">(TENFIREMEN)* — anagram of 'ten firemen'</span>
     </div>
   </div>
 
@@ -67,7 +67,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">CREDO</span>
-      <span class="solution-clue">Persuasion read, lacking leading character bores actor every second (5)</span>
+      <span class="solution-clue">Persuasion read, lacking leading character bores actor occasionally (5)</span>
       <span class="solution-breakdown">[aCtOr] -> C{RE[a]D}O — alternate letters of actor, and insert READ without A</span>
     </div>
   </div>
@@ -112,7 +112,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">21</span>
     <div class="solution-content">
       <span class="solution-answer">SHEER BLISS</span>
-      <span class="solution-clue">He's ribless, molded in heaven (5,5)</span>
+      <span class="solution-clue">He's rib-less, moulded in heaven (5,5)</span>
       <span class="solution-breakdown">(HESRIBLESS)* — anagram of 'he's ribless'</span>
     </div>
   </div>
@@ -121,7 +121,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">23</span>
     <div class="solution-content">
       <span class="solution-answer">ENVELOP</span>
-      <span class="solution-clue">Resent short fellow from Warsaw lying around blanket (7)</span>
+      <span class="solution-clue">Resent short fellow from Warsaw, maybe lying around in blanket (7)</span>
       <span class="solution-breakdown">ENV[y] + [POLE]&lt; — ENVY with last letter removed, fellow from Warsaw (POLE) reversed</span>
     </div>
   </div>
@@ -139,7 +139,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">25</span>
     <div class="solution-content">
       <span class="solution-answer">DAY ONE</span>
-      <span class="solution-clue">Start do over, shaving Jay's head with new cut (3,3)</span>
+      <span class="solution-clue">Start do over, Jay having head shaved with new cut (3,3)</span>
       <span class="solution-breakdown">D{[j]AY}O + NE[w] — 'do' over 'ay' with trimmed 'new'</span>
     </div>
   </div>
@@ -189,7 +189,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">5</span>
     <div class="solution-content">
       <span class="solution-answer">UNAPT</span>
-      <span class="solution-clue">Texting "You sleep with shirt? Improper" (5)</span>
+      <span class="solution-clue">Heard you sleep with shirt? Improper (5)</span>
       <span class="solution-breakdown">YOU->U + NAP + T — txtspk 'you->u' with NAP (sleep) + T (shirt)</span>
     </div>
   </div>
@@ -198,7 +198,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">6</span>
     <div class="solution-content">
       <span class="solution-answer">EMBARGO</span>
-      <span class="solution-clue">Ban business graduate consequently received (7)</span>
+      <span class="solution-clue">Ban business graduate consequently has received (7)</span>
       <span class="solution-breakdown">E{MBA}RGO — MBA (business graduate) in ERGO (consequently)</span>
     </div>
   </div>
@@ -216,8 +216,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">10</span>
     <div class="solution-content">
       <span class="solution-answer">JET-SETTER</span>
-      <span class="solution-clue">Juliet and I to welcome in alien traveller (3-6)</span>
-      <span class="solution-breakdown">J{ET} + SETTER — (J)uliet + I (setter) around ET (alien)</span>
+      <span class="solution-clue">Juliett and I to welcome in alien traveller (3-6)</span>
+      <span class="solution-breakdown">J{ET} + SETTER — (J)uliett + I (setter) around ET (alien)</span>
     </div>
   </div>
 
@@ -225,8 +225,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">CONDEMNED</span>
-      <span class="solution-clue">Cheated, stealing recalled medication being declared unsafe (9)</span>
-      <span class="solution-breakdown">CON{MED&lt;}NED — CHEATED [CONNED] around reversed MED</span>
+      <span class="solution-clue">Bled after taking recalled medicine declared unsafe (9)</span>
+      <span class="solution-breakdown">CON{MED&lt;}NED — CONNED (bled) around reversed MED</span>
     </div>
   </div>
 
@@ -243,8 +243,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">17</span>
     <div class="solution-content">
       <span class="solution-answer">SATIETY</span>
-      <span class="solution-clue">Filled state with a second left-leaning couple — try ditching Republican (7)</span>
-      <span class="solution-breakdown">[A + S]&lt; -> [S + A] + [TIE] + [T[r]Y] — (A) (S)econd reversed + BOND (TIE) + TRY without R</span>
+      <span class="solution-clue">Start to take it easy after cooking to the point of satisfaction? (7)</span>
+      <span class="solution-breakdown">(T[ake] IT EASY)* — anagram of first letter of 'take' + 'it easy'</span>
     </div>
   </div>
 
@@ -270,8 +270,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">22</span>
     <div class="solution-content">
       <span class="solution-answer">SORRY</span>
-      <span class="solution-clue">Mournful beginning of Sense and Sensibility ultimately introduces even poorer characters (5)</span>
-      <span class="solution-breakdown">S{pOoReR}Y — beginning of (S)ense and end of Sensibilit(y) encapsulating even letters of poorer</span>
+      <span class="solution-clue">Mournful beginning of Sense and Sensibility ultimately enthralling as an alternative reading? (5)</span>
+      <span class="solution-breakdown">S{OR + R}Y — beginning of (S)ense and end of Sensibilit(y) enthralling OR (alternative) + (R)eading -> DBE (3 R's)</span>
     </div>
   </div>
 
