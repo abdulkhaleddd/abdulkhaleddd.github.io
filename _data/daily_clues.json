@@ -22,14 +22,37 @@
     }
   },
     {
-    "clue": "Wolf-like dog's outside, leaving steaming dung-pile (7)",
-    "answer": "LUPINE",
-    "breakdown": "([d]UN[g]PILE)* — anagram of dung-pile with outside letters of 'dog' removed",
+    "clue": "Clothes disorganized without hanger's left here? (6)",
+    "answer": "CLOSET",
+    "breakdown": "(CLOT[h]ES)* — anagram of clothes with left of hanger removed",
+    "enumeration": "(6)",
+    "hints": {
+      "definition": "The definition in this clue is 'Clothes disorganized without hanger's left here?'. This is a partial-&lit, meaning the entire clue is the definition, and partially wordplay.",
+      "indicator": "The indicators in this clue are 'disorganized', an anagram indicator, 'without', a deletion indicator, and 'left', a selection indicator",
+      "fodder": "The fodder in this clue is the words 'clothes' and 'hanger'"
+    }
+  },
+      {
+    "clue": "Stony-faced sculpture of Jesus drops crown protecting Brazilian city (7)",
+    "answer": "SERIOUS",
+    "breakdown": "([j]ESUS)* -> [SE{RIO}US] — anagram of JESUS without first letter around RIO (Brazilian city)",
     "enumeration": "(7)",
     "hints": {
-      "definition": "The definition in this clue is 'Wolf-like'",
-      "indicator": "The indicators in this clue are 'outside', a selection indicator, 'leaving', a deletion indicator, and 'steaming', an anagram indicator ",
+      "definition": "The definition in this clue is 'Stony-faced'.",
+      "indicator": "The indicators in this clue are 'sculpture of', an anagram indicator, 'drops crown', a deletion indicator, and 'protecting', a container indicator.",
+      "fodder": "The fodder in this clue is 'Jesus' and 'Brazilian city'. Find a short substitute for a famous Brazilian city.'"
+    }
+  },
+        {
+    "clue": "College official's position withdrawn over ethic unwelcomed at work? (7)",
+    "answer": "ELECTOR",
+    "breakdown": "[ROLE]< + (ET[hi]C)* -> [EL{ECT}OR] — reverse ROLE (position) over anagram of ETHIC without HI (unwelcomed)"
+    "enumeration": "(7)",
+    "hints": {
+      "definition": "The definition in this clue is 'College official'",
+      "indicator": "The indicators in this clue are 'withdrawn', a reversal indicator, 'over', a container indicator, 'unwelcomed', a stretchy deletion indicator, and 'at work', an anagram indicator",
       "fodder": "The fodder in this clue are the words 'dog' and 'dung-pile'"
     }
   },
+]
 ]
