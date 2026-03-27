@@ -510,6 +510,24 @@ footer::after {
   opacity: 0.85;
 }
 
+/* THEME NOTE */
+.theme-note {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+  margin-top: 0.5rem;
+}
+
+.theme-note strong {
+  font-family: 'Crimson Text', serif;
+  font-style: normal;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sepia);
+}
+
 /* SOLUTIONS LINK BLOCK */
 .solutions-link-block {
   margin-top: 2rem;
