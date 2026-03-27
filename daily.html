@@ -11,7 +11,7 @@ permalink: /daily/
 
   <h1 class="post-title">Daily Clue</h1>
 
-  <p class="daily-intro">A new cryptic clue every day. Can you crack it?</p>
+  <p class="daily-intro">A new cryptic clue every day. Can you solve it?</p>
 
   <div class="daily-widget">
     <div class="daily-clue-box">
@@ -31,6 +31,16 @@ permalink: /daily/
     </div>
 
     <div class="daily-feedback" id="daily-feedback"></div>
+
+    <div class="daily-hint-section">
+      <p class="daily-hint-label">Need a nudge?</p>
+      <div class="daily-hint-buttons">
+        <button class="daily-btn daily-btn-hint" onclick="showHint('definition')">Definition</button>
+        <button class="daily-btn daily-btn-hint" onclick="showHint('indicator')">Indicator</button>
+        <button class="daily-btn daily-btn-hint" onclick="showHint('fodder')">Fodder</button>
+      </div>
+      <div class="daily-hint-text" id="daily-hint-text"></div>
+    </div>
 
     <div class="daily-reveal-row">
       <button class="daily-btn daily-btn-subtle" id="daily-reveal" onclick="revealAnswer()">Reveal answer</button>
@@ -131,6 +141,61 @@ permalink: /daily/
     color: var(--paper);
   }
 
+  /* HINT SECTION */
+  .daily-hint-section {
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0;
+    border-top: 1px dotted var(--paper-darker);
+  }
+
+  .daily-hint-label {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-bottom: 0.5rem;
+  }
+
+  .daily-hint-buttons {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+  }
+
+  .daily-btn-hint {
+    background: transparent;
+    color: var(--ink-faint);
+    border: 1px solid var(--paper-darker);
+    padding: 0.35rem 0.9rem;
+    font-size: 0.72rem;
+  }
+
+  .daily-btn-hint:hover {
+    color: var(--paper);
+  }
+
+  .daily-btn-hint.used {
+    border-color: var(--sepia-light);
+    color: var(--sepia);
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  .daily-btn-hint.used:hover {
+    background: transparent;
+    color: var(--sepia);
+  }
+
+  .daily-hint-text {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--ink-light);
+    line-height: 1.5;
+    min-height: 1.4rem;
+  }
+
   .daily-reveal-row {
     display: flex;
     gap: 0.5rem;
@@ -179,15 +244,17 @@ permalink: /daily/
 
 <script>
   (function() {
-    // Load clues from data file
     var clues = {{ site.data.daily_clues | jsonify }};
 
-    // Pick clue based on date (everyone sees the same clue on the same day)
+    // Pick clue based on date
     var today = new Date();
-    var epoch = new Date(2026, 2, 27); // March 29, 2026 — launch date
+    var epoch = new Date(2026, 2, 27); //
     var dayIndex = Math.floor((today - epoch) / 86400000);
     var index = ((dayIndex % clues.length) + clues.length) % clues.length;
     var todayClue = clues[index];
+
+    // Track which hints have been revealed
+    var revealedHints = {};
 
     // Display date
     var months = ['January','February','March','April','May','June',
@@ -203,14 +270,12 @@ permalink: /daily/
       if (e.key === 'Enter') checkAnswer();
     });
 
-    // Expose functions globally
     window.checkAnswer = function() {
       var input = document.getElementById('daily-input').value.trim().toUpperCase();
       var feedback = document.getElementById('daily-feedback');
 
       if (!input) return;
 
-      // Strip spaces/hyphens for comparison
       var clean = input.replace(/[\s\-]/g, '');
       var answer = todayClue.answer.replace(/[\s\-]/g, '');
 
@@ -222,6 +287,23 @@ permalink: /daily/
         feedback.textContent = 'Not quite — try again.';
         feedback.className = 'daily-feedback incorrect';
       }
+    };
+
+    window.showHint = function(type) {
+      if (revealedHints[type]) return;
+
+      revealedHints[type] = true;
+      var hintText = document.getElementById('daily-hint-text');
+      var label = type.charAt(0).toUpperCase() + type.slice(1);
+      hintText.textContent = label + ': ' + todayClue.hints[type];
+
+      // Mark button as used
+      var buttons = document.querySelectorAll('.daily-btn-hint');
+      buttons.forEach(function(btn) {
+        if (btn.textContent.trim().toLowerCase() === type) {
+          btn.classList.add('used');
+        }
+      });
     };
 
     window.revealAnswer = function() {
