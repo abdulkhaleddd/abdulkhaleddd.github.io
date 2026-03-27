@@ -2,7 +2,7 @@
   {
     "clue": "Key returned in hotel sign-out (4)",
     "answer": "ISLE",
-    "breakdown": "[hotEL SIgn-out]<",
+    "breakdown": "[hotEL SIgn-out]< — ISLE hidden and reversed in 'hotel sign-out'",
     "enumeration": "(4)",
     "hints": {
       "definition": "The definition in this clue is 'Key'",
@@ -13,12 +13,23 @@
     {
     "clue": "Standing alone at out-of-order urinals (7)",
     "answer": "INSULAR",
-    "breakdown": "(URINALS*)",
+    "breakdown": "(URINALS)* — anagram of urinals ",
     "enumeration": "(7)",
     "hints": {
       "definition": "The definition in this clue is 'Standing alone'",
       "indicator": "The indicator in this clue is 'out-of-order', an anagram indicator",
       "fodder": "The fodder in this clue is the word 'urinals'"
+    }
+  },
+    {
+    "clue": "Wolf-like dog's outside, leaving steaming dung-pile (7)",
+    "answer": "LUPINE",
+    "breakdown": "([d]UN[g]PILE)* — anagram of dung-pile with outside letters of 'dog' removed",
+    "enumeration": "(7)",
+    "hints": {
+      "definition": "The definition in this clue is 'Wolf-like'",
+      "indicator": "The indicators in this clue are 'outside', a selection indicator, 'leaving', a deletion indicator, and 'steaming', an anagram indicator ",
+      "fodder": "The fodder in this clue are the words 'dog' and 'dung-pile'"
     }
   },
 ]
