@@ -3,61 +3,22 @@
     "clue": "Stellar comedian maintains element of surprise (6)",
     "answer": "COSMIC",
     "breakdown": "CO{S}MIC — COMIC (comedian) around S",
-    "enumeration": "(6)"
+    "enumeration": "(6)",
+    "hints": {
+      "definition": "The definition is at the start of the clue.",
+      "indicator": "'Maintains' signals containment.",
+      "fodder": "Think of a word for comedian and a single letter for surprise."
+    }
   },
   {
     "clue": "Pressure wound essentially covered by bandage (6)",
     "answer": "DURESS",
     "breakdown": "D{U}RESS — wound essentially (middle letter) covered by dress (bandage)",
-    "enumeration": "(6)"
+    "enumeration": "(6)",
+    "hints": {
+      "definition": "The definition is at the start of the clue.",
+      "indicator": "'Essentially' signals a middle letter; 'covered by' signals containment.",
+      "fodder": "Think of a word for bandage and the middle letter of 'wound'."
+    }
   },
-  {
-    "clue": "Golf, walk, and run to get better (7)",
-    "answer": "GAMBLER",
-    "breakdown": "G + AMBLE + R — (G)olf (NATO) + AMBLE (walk) + (R)un",
-    "enumeration": "(7)"
-  },
-  {
-    "clue": "Elegance of ten firemen working (10)",
-    "answer": "REFINEMENT",
-    "breakdown": "(TENFIREMEN)* — anagram of 'ten firemen'",
-    "enumeration": "(10)"
-  },
-  {
-    "clue": "Communicated out loud without thinking (4)",
-    "answer": "ROTE",
-    "breakdown": "[WROTE]~[ROTE] — homophone of WROTE minus W",
-    "enumeration": "(4)"
-  },
-  {
-    "clue": "Steps to keep emergency room germ-free (7)",
-    "answer": "STERILE",
-    "breakdown": "ST{ER}ILE — STILE (Steps) around ER",
-    "enumeration": "(7)"
-  },
-  {
-    "clue": "Ban business graduate consequently has received (7)",
-    "answer": "EMBARGO",
-    "breakdown": "E{MBA}RGO — MBA (business graduate) in ERGO (consequently)",
-    "enumeration": "(7)"
-  },
-  {
-    "clue": "Demolish a hot dessert, and let it all out (4,5)",
-    "answer": "SHED TEARS",
-    "breakdown": "(A + H + DESSERT)* — anagram of a + (h)ot + dessert",
-    "enumeration": "(4,5)"
-  },
-  {
-    "clue": "Firm advertises artificial diamonds being given away (9)",
-    "answer": "ASSERTIVE",
-    "breakdown": "(A[d]VERTISES)* — anagram of advertises without (d)iamonds",
-    "enumeration": "(9)"
-  },
-  {
-    "clue": "Just making a comeback in freestyle rematch (6)",
-    "answer": "MERELY",
-    "breakdown": "[freestYLE REMatch] — merely reversed hidden in freestyle rematch",
-    "enumeration": "(6)"
-  }
 ]
-
