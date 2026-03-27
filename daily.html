@@ -184,7 +184,7 @@ permalink: /daily/
 
     // Pick clue based on date (everyone sees the same clue on the same day)
     var today = new Date();
-    var epoch = new Date(2026, 2, 29); // March 29, 2026 — launch date
+    var epoch = new Date(2026, 2, 27); // March 29, 2026 — launch date
     var dayIndex = Math.floor((today - epoch) / 86400000);
     var index = ((dayIndex % clues.length) + clues.length) % clues.length;
     var todayClue = clues[index];
