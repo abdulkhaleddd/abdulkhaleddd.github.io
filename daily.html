@@ -214,14 +214,19 @@ permalink: /daily/
     color: var(--paper);
   }
 
-  .daily-btn-hint.used {
+  .daily-btn-hint.active {
+    border-color: var(--sepia);
+    color: var(--sepia);
+  }
+
+  .daily-btn-hint.used-letter {
     border-color: var(--sepia-light);
     color: var(--sepia);
     opacity: 0.6;
     cursor: default;
   }
 
-  .daily-btn-hint.used:hover {
+  .daily-btn-hint.used-letter:hover {
     background: transparent;
     color: var(--sepia);
   }
@@ -286,14 +291,13 @@ permalink: /daily/
     var clues = {{ site.data.daily_clues | jsonify }};
 
     var today = new Date();
-    var epoch = new Date(2026, 2, 27);
+    var epoch = new Date(2026, 2, 27); // March 27, 2026
     var dayIndex = Math.floor((today - epoch) / 86400000);
     var index = ((dayIndex % clues.length) + clues.length) % clues.length;
     var todayClue = clues[index];
 
-    var revealedHints = {};
     var letterInputs = [];
-    var givenIndices = []; // tracks which boxes were filled by the Letter hint
+    var givenIndices = [];
     var answerLetters = todayClue.answer.replace(/[\s\-]/g, '').split('');
 
     // Display date
@@ -350,7 +354,6 @@ permalink: /daily/
 
               inp.addEventListener('keydown', function(e) {
                 if (e.key === 'Backspace' && !this.value && idx > 0) {
-                  // Don't backspace into a given (hint) box
                   var prev = idx - 1;
                   while (prev >= 0 && givenIndices.indexOf(prev) !== -1) prev--;
                   if (prev >= 0) {
@@ -422,22 +425,22 @@ permalink: /daily/
     };
 
     window.showHint = function(type) {
-      if (revealedHints[type]) return;
-      revealedHints[type] = true;
       var hintText = document.getElementById('daily-hint-text');
       var label = type.charAt(0).toUpperCase() + type.slice(1);
       hintText.textContent = label + ': ' + todayClue.hints[type];
 
-      var buttons = document.querySelectorAll('.daily-btn-hint');
+      // Highlight the active button, dim others
+      var buttons = document.querySelectorAll('.daily-btn-hint:not(#letter-hint-btn)');
       buttons.forEach(function(btn) {
         if (btn.textContent.trim().toLowerCase() === type) {
-          btn.classList.add('used');
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
         }
       });
     };
 
     window.revealLetter = function() {
-      // Find indices that haven't been given yet and aren't already correct
       var available = [];
       for (var i = 0; i < letterInputs.length; i++) {
         if (givenIndices.indexOf(i) === -1) {
@@ -448,19 +451,16 @@ permalink: /daily/
       }
 
       if (available.length === 0) {
-        // All letters already correct or given — disable button
-        document.getElementById('letter-hint-btn').classList.add('used');
+        document.getElementById('letter-hint-btn').classList.add('used-letter');
         return;
       }
 
-      // Pick a random available index
       var pick = available[Math.floor(Math.random() * available.length)];
       letterInputs[pick].value = answerLetters[pick].toUpperCase();
       letterInputs[pick].classList.add('given');
       letterInputs[pick].disabled = true;
       givenIndices.push(pick);
 
-      // If no more available, disable the button
       var remaining = [];
       for (var j = 0; j < letterInputs.length; j++) {
         if (givenIndices.indexOf(j) === -1) {
@@ -470,7 +470,7 @@ permalink: /daily/
         }
       }
       if (remaining.length === 0) {
-        document.getElementById('letter-hint-btn').classList.add('used');
+        document.getElementById('letter-hint-btn').classList.add('used-letter');
       }
     };
 
