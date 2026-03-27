@@ -168,7 +168,7 @@ pink: {
     for (const [k, v] of Object.entries(vars)) root.style.setProperty(k, v);
     document.body.classList.toggle('dark', dark);
     const icon = document.querySelector('.theme-icon');
-    if (icon) icon.textContent = dark ? '☀' : '☽';
+    if (icon) icon.textContent = dark ? '𖤓' : '☽';
     document.querySelectorAll('.swatch').forEach(s => {
       s.classList.toggle('active', s.dataset.theme === palette);
     });
