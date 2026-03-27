@@ -1,0 +1,247 @@
+---
+layout: default
+title: "Daily Clue"
+permalink: /daily/
+---
+
+<article class="post-card featured single-post">
+  <div class="post-meta">
+    Daily Clue &ensp;·&ensp; <span id="daily-date"></span>
+  </div>
+
+  <h1 class="post-title">Daily Clue</h1>
+
+  <p class="daily-intro">A new cryptic clue every day. Can you crack it?</p>
+
+  <div class="daily-widget">
+    <div class="daily-clue-box">
+      <p class="daily-clue-text" id="daily-clue"></p>
+    </div>
+
+    <div class="daily-input-row">
+      <input
+        type="text"
+        id="daily-input"
+        class="daily-input"
+        placeholder="Your answer..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button class="daily-btn" id="daily-check" onclick="checkAnswer()">Check</button>
+    </div>
+
+    <div class="daily-feedback" id="daily-feedback"></div>
+
+    <div class="daily-reveal-row">
+      <button class="daily-btn daily-btn-subtle" id="daily-reveal" onclick="revealAnswer()">Reveal answer</button>
+      <button class="daily-btn daily-btn-subtle" id="daily-parsing" onclick="revealParsing()" style="display:none;">Show parsing</button>
+    </div>
+
+    <div class="daily-answer-box" id="daily-answer-box" style="display:none;">
+      <div class="daily-answer" id="daily-answer"></div>
+      <div class="daily-breakdown" id="daily-breakdown"></div>
+    </div>
+  </div>
+</article>
+
+<style>
+  .daily-intro {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    color: var(--ink-faint);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .daily-widget {
+    max-width: 520px;
+  }
+
+  .daily-clue-box {
+    background: var(--paper-dark);
+    border: 1px solid var(--paper-darker);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .daily-clue-text {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.15rem;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .daily-input-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .daily-input {
+    flex: 1;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--paper-darker);
+    background: var(--paper);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .daily-input:focus {
+    border-color: var(--sepia);
+  }
+
+  .daily-input::placeholder {
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--ink-faint);
+    opacity: 0.5;
+  }
+
+  .daily-btn {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .daily-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .daily-btn-subtle {
+    background: transparent;
+    color: var(--ink-faint);
+    border: 1px solid var(--paper-darker);
+  }
+
+  .daily-btn-subtle:hover {
+    color: var(--paper);
+  }
+
+  .daily-reveal-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .daily-feedback {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 0.92rem;
+    min-height: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .daily-feedback.correct {
+    color: #4a7c4f;
+  }
+
+  .daily-feedback.incorrect {
+    color: var(--accent);
+  }
+
+  .daily-answer-box {
+    background: var(--paper-dark);
+    border: 1px solid var(--paper-darker);
+    padding: 1rem 1.25rem;
+    margin-top: 0.5rem;
+  }
+
+  .daily-answer {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+  }
+
+  .daily-breakdown {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.9rem;
+    color: var(--ink-faint);
+    line-height: 1.5;
+  }
+</style>
+
+<script>
+  (function() {
+    // Load clues from data file
+    var clues = {{ site.data.daily_clues | jsonify }};
+
+    // Pick clue based on date (everyone sees the same clue on the same day)
+    var today = new Date();
+    var epoch = new Date(2026, 2, 29); // March 29, 2026 — launch date
+    var dayIndex = Math.floor((today - epoch) / 86400000);
+    var index = ((dayIndex % clues.length) + clues.length) % clues.length;
+    var todayClue = clues[index];
+
+    // Display date
+    var months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+    document.getElementById('daily-date').textContent =
+      today.getDate() + ' ' + months[today.getMonth()] + ' ' + today.getFullYear();
+
+    // Display clue
+    document.getElementById('daily-clue').textContent = todayClue.clue;
+
+    // Enter key submits
+    document.getElementById('daily-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') checkAnswer();
+    });
+
+    // Expose functions globally
+    window.checkAnswer = function() {
+      var input = document.getElementById('daily-input').value.trim().toUpperCase();
+      var feedback = document.getElementById('daily-feedback');
+
+      if (!input) return;
+
+      // Strip spaces/hyphens for comparison
+      var clean = input.replace(/[\s\-]/g, '');
+      var answer = todayClue.answer.replace(/[\s\-]/g, '');
+
+      if (clean === answer) {
+        feedback.textContent = 'Correct — well solved!';
+        feedback.className = 'daily-feedback correct';
+        showAnswer();
+      } else {
+        feedback.textContent = 'Not quite — try again.';
+        feedback.className = 'daily-feedback incorrect';
+      }
+    };
+
+    window.revealAnswer = function() {
+      document.getElementById('daily-feedback').textContent = '';
+      document.getElementById('daily-feedback').className = 'daily-feedback';
+      showAnswer();
+    };
+
+    window.revealParsing = function() {
+      document.getElementById('daily-breakdown').style.display = 'block';
+      document.getElementById('daily-parsing').style.display = 'none';
+    };
+
+    function showAnswer() {
+      document.getElementById('daily-answer').textContent = todayClue.answer;
+      document.getElementById('daily-breakdown').textContent = todayClue.breakdown;
+      document.getElementById('daily-breakdown').style.display = 'none';
+      document.getElementById('daily-answer-box').style.display = 'block';
+      document.getElementById('daily-parsing').style.display = 'inline-block';
+      document.getElementById('daily-reveal').style.display = 'none';
+    }
+  })();
+</script>
