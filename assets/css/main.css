@@ -528,6 +528,19 @@ footer::after {
   color: var(--sepia);
 }
 
+/* THEME TAG (on individual clues) */
+.solution-theme-tag {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.1rem 0.45rem;
+  width: fit-content;
+  opacity: 0.7;
+}
+
 /* SOLUTIONS LINK BLOCK */
 .solutions-link-block {
   margin-top: 2rem;
