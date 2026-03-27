@@ -121,7 +121,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">23</span>
     <div class="solution-content">
       <span class="solution-answer">ENVELOP</span>
-      <span class="solution-clue">Resent short fellow from Warsaw, maybe lying around in blanket (7)</span>
+      <span class="solution-clue">Yearn for short fellow from Warsaw, perhaps to "lie around" in blanket (7)</span>
       <span class="solution-breakdown">ENV[y] + [POLE]&lt; — ENVY with last letter removed, fellow from Warsaw (POLE) reversed</span>
     </div>
   </div>
