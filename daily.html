@@ -3,6 +3,7 @@ layout: default
 title: "Daily Clue"
 permalink: /daily/
 ---
+
 <article class="post-card featured single-post">
   <div class="post-meta">
     Daily Clue &ensp;·&ensp; <span id="daily-date"></span>
@@ -31,6 +32,7 @@ permalink: /daily/
         <button class="daily-btn daily-btn-hint" onclick="showHint('definition')">Definition</button>
         <button class="daily-btn daily-btn-hint" onclick="showHint('indicator')">Indicator</button>
         <button class="daily-btn daily-btn-hint" onclick="showHint('fodder')">Fodder</button>
+        <button class="daily-btn daily-btn-hint" id="letter-hint-btn" onclick="revealLetter()">Letter</button>
       </div>
       <div class="daily-hint-text" id="daily-hint-text"></div>
     </div>
@@ -125,14 +127,10 @@ permalink: /daily/
     border-color: var(--sepia);
   }
 
-  .daily-letter-box.correct {
-    border-color: #4a7c4f;
-    background: rgba(74, 124, 79, 0.08);
-  }
-
-  .daily-letter-box.incorrect {
-    border-color: var(--accent);
-    background: rgba(139, 26, 26, 0.05);
+  .daily-letter-box.given {
+    border-color: var(--sepia-light);
+    color: var(--sepia);
+    background: var(--paper-dark);
   }
 
   .daily-letter-box.revealed {
@@ -295,6 +293,7 @@ permalink: /daily/
 
     var revealedHints = {};
     var letterInputs = [];
+    var givenIndices = []; // tracks which boxes were filled by the Letter hint
     var answerLetters = todayClue.answer.replace(/[\s\-]/g, '').split('');
 
     // Display date
@@ -307,24 +306,19 @@ permalink: /daily/
     document.getElementById('daily-clue').textContent = todayClue.clue;
 
     // Parse enumeration to build boxes
-    // e.g. "(4,5)" -> groups of 4 and 5 separated by space
-    // e.g. "(3-6)" -> groups of 3 and 6 separated by hyphen
     function buildBoxes() {
       var area = document.getElementById('daily-boxes-area');
       var enumStr = todayClue.enumeration.replace(/[()]/g, '');
-      // Split on commas and hyphens, keeping the delimiter
       var parts = enumStr.split(/([,\-])/);
 
       var globalIndex = 0;
 
-      parts.forEach(function(part, i) {
+      parts.forEach(function(part) {
         if (part === ',') {
-          // Word gap (space between words)
           var gap = document.createElement('div');
           gap.className = 'daily-word-gap';
           area.appendChild(gap);
         } else if (part === '-') {
-          // Hyphen separator
           var hyph = document.createElement('div');
           hyph.className = 'daily-hyphen';
           hyph.textContent = '–';
@@ -346,12 +340,9 @@ permalink: /daily/
             inp.spellcheck = false;
 
             (function(idx) {
-              inp.addEventListener('input', function(e) {
+              inp.addEventListener('input', function() {
                 var val = this.value.replace(/[^a-zA-Z]/g, '');
                 this.value = val.toUpperCase();
-                // Clear any feedback styling on edit
-                this.classList.remove('correct', 'incorrect');
-                // Auto-advance to next box
                 if (val && idx < letterInputs.length - 1) {
                   letterInputs[idx + 1].focus();
                 }
@@ -359,15 +350,18 @@ permalink: /daily/
 
               inp.addEventListener('keydown', function(e) {
                 if (e.key === 'Backspace' && !this.value && idx > 0) {
-                  letterInputs[idx - 1].focus();
-                  letterInputs[idx - 1].value = '';
-                  letterInputs[idx - 1].classList.remove('correct', 'incorrect');
+                  // Don't backspace into a given (hint) box
+                  var prev = idx - 1;
+                  while (prev >= 0 && givenIndices.indexOf(prev) !== -1) prev--;
+                  if (prev >= 0) {
+                    letterInputs[prev].focus();
+                    letterInputs[prev].value = '';
+                  }
                   e.preventDefault();
                 }
                 if (e.key === 'Enter') {
                   checkAnswer();
                 }
-                // Arrow key navigation
                 if (e.key === 'ArrowLeft' && idx > 0) {
                   letterInputs[idx - 1].focus();
                   e.preventDefault();
@@ -378,7 +372,6 @@ permalink: /daily/
                 }
               });
 
-              // Select all text on focus for easy overwrite
               inp.addEventListener('focus', function() {
                 this.select();
               });
@@ -393,7 +386,6 @@ permalink: /daily/
         }
       });
 
-      // Focus first box
       if (letterInputs.length > 0) {
         letterInputs[0].focus();
       }
@@ -408,23 +400,14 @@ permalink: /daily/
       if (!allFilled) {
         feedback.textContent = 'Fill in all the letters first.';
         feedback.className = 'daily-feedback incorrect';
-        // Focus first empty box
         for (var i = 0; i < letterInputs.length; i++) {
           if (!letterInputs[i].value) { letterInputs[i].focus(); break; }
         }
         return;
       }
 
-      var allCorrect = true;
-      letterInputs.forEach(function(inp, i) {
-        if (inp.value.toUpperCase() === answerLetters[i].toUpperCase()) {
-          inp.classList.add('correct');
-          inp.classList.remove('incorrect');
-        } else {
-          inp.classList.add('incorrect');
-          inp.classList.remove('correct');
-          allCorrect = false;
-        }
+      var allCorrect = letterInputs.every(function(inp, i) {
+        return inp.value.toUpperCase() === answerLetters[i].toUpperCase();
       });
 
       if (allCorrect) {
@@ -453,13 +436,51 @@ permalink: /daily/
       });
     };
 
+    window.revealLetter = function() {
+      // Find indices that haven't been given yet and aren't already correct
+      var available = [];
+      for (var i = 0; i < letterInputs.length; i++) {
+        if (givenIndices.indexOf(i) === -1) {
+          if (letterInputs[i].value.toUpperCase() !== answerLetters[i].toUpperCase()) {
+            available.push(i);
+          }
+        }
+      }
+
+      if (available.length === 0) {
+        // All letters already correct or given — disable button
+        document.getElementById('letter-hint-btn').classList.add('used');
+        return;
+      }
+
+      // Pick a random available index
+      var pick = available[Math.floor(Math.random() * available.length)];
+      letterInputs[pick].value = answerLetters[pick].toUpperCase();
+      letterInputs[pick].classList.add('given');
+      letterInputs[pick].disabled = true;
+      givenIndices.push(pick);
+
+      // If no more available, disable the button
+      var remaining = [];
+      for (var j = 0; j < letterInputs.length; j++) {
+        if (givenIndices.indexOf(j) === -1) {
+          if (letterInputs[j].value.toUpperCase() !== answerLetters[j].toUpperCase()) {
+            remaining.push(j);
+          }
+        }
+      }
+      if (remaining.length === 0) {
+        document.getElementById('letter-hint-btn').classList.add('used');
+      }
+    };
+
     window.revealAnswer = function() {
       document.getElementById('daily-feedback').textContent = '';
       document.getElementById('daily-feedback').className = 'daily-feedback';
 
       letterInputs.forEach(function(inp, i) {
         inp.value = answerLetters[i].toUpperCase();
-        inp.classList.remove('correct', 'incorrect');
+        inp.classList.remove('given');
         inp.classList.add('revealed');
         inp.disabled = true;
       });
