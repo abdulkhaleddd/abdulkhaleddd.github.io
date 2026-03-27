@@ -46,13 +46,13 @@
         {
     "clue": "College official's position withdrawn over ethic unwelcomed at work? (7)",
     "answer": "ELECTOR",
-    "breakdown": "[ROLE]< + (ET[hi]C)* -> [EL{ECT}OR] — reverse ROLE (position) over anagram of ETHIC without HI (unwelcomed)"
+    "breakdown": "[ROLE]< + (ET[hi]C)* -> [EL{ECT}OR] — reverse ROLE (position) over anagram of ETHIC without HI (unwelcomed)",
     "enumeration": "(7)",
     "hints": {
       "definition": "The definition in this clue is 'College official'",
       "indicator": "The indicators in this clue are 'withdrawn', a reversal indicator, 'over', a container indicator, 'unwelcomed', a stretchy deletion indicator, and 'at work', an anagram indicator",
-      "fodder": "The fodder in this clue is the words 'dog' and 'dung-pile'"
+      "fodder": "The fodder in this clue is the words 'position' and 'ethic'"
     }
-  },
+  }
 ]
 
