@@ -1,9 +1,10 @@
 ---
 layout: solution
 title: "No. 3: By the Book"
-number: 1
-date: 2026-03-28
+number: 3
+date: 2026-03-29
 puzzle_slug: "puzzle-003"
+theme: "Literature"
 permalink: /solutions/solution-003/
 ---
 <div class="solutions-section">
@@ -67,8 +68,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">CREDO</span>
-      <span class="solution-clue">Persuasion read, lacking leading character bores actor occasionally (5)</span>
-      <span class="solution-breakdown">[aCtOr] -> C{RE[a]D}O — alternate letters of actor, and insert READ without A</span>
+      <span class="solution-clue">Persuasion read, lacking leading character's boring company (5)</span>
+      <span class="solution-breakdown">C{RE[a]D}O — READ without A inserted in CO (company)</span>
     </div>
   </div>
 
@@ -76,8 +77,8 @@ permalink: /solutions/solution-003/
     <span class="solution-number">14</span>
     <div class="solution-content">
       <span class="solution-answer">SEASONAL</span>
-      <span class="solution-clue">A boy gets devoured by sea lion's mouth every summer? (8)</span>
-      <span class="solution-breakdown">SE{ASON}AL — A son (a boy) inside sea + lion's top, 'every summer?' is DBE, if something is every summer it is seasonal</span>
+      <span class="solution-clue">Regulars in car show block westbound roads every summer? (8)</span>
+      <span class="solution-breakdown">[LANES]&lt; -> SE{cArShOw}NAL — regular letters of car show inserted in lanes (roads) reversed</span>
     </div>
   </div>
 
@@ -121,7 +122,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">23</span>
     <div class="solution-content">
       <span class="solution-answer">ENVELOP</span>
-      <span class="solution-clue">Yearn for short fellow from Warsaw, perhaps to "lie around" in blanket (7)</span>
+      <span class="solution-clue">Envy short fellow from Warsaw, maybe lying around in blanket (7)</span>
       <span class="solution-breakdown">ENV[y] + [POLE]&lt; — ENVY with last letter removed, fellow from Warsaw (POLE) reversed</span>
     </div>
   </div>
@@ -139,7 +140,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">25</span>
     <div class="solution-content">
       <span class="solution-answer">DAY ONE</span>
-      <span class="solution-clue">Start do over, Jay having head shaved with new cut (3,3)</span>
+      <span class="solution-clue">Jay's having head shaved in hairstyle — fresh cut's beginning (3,3)</span>
       <span class="solution-breakdown">D{[j]AY}O + NE[w] — 'do' over 'ay' with trimmed 'new'</span>
     </div>
   </div>
@@ -270,7 +271,7 @@ permalink: /solutions/solution-003/
     <span class="solution-number">22</span>
     <div class="solution-content">
       <span class="solution-answer">SORRY</span>
-      <span class="solution-clue">Mournful beginning of Sense and Sensibility ultimately enthralling as an alternative reading? (5)</span>
+      <span class="solution-clue">Sad beginning of Sense and Sensibility ultimately enthralling as an alternative reading? (5)</span>
       <span class="solution-breakdown">S{OR + R}Y — beginning of (S)ense and end of Sensibilit(y) enthralling OR (alternative) + (R)eading -> DBE (3 R's)</span>
     </div>
   </div>
