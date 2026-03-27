@@ -1,13 +1,13 @@
 [
   {
-    "clue": "Stellar comedian maintains element of surprise (6)",
-    "answer": "COSMIC",
-    "breakdown": "CO{S}MIC — COMIC (comedian) around S",
-    "enumeration": "(6)",
+    "clue": "Part owner of workshop's interior? (5)",
+    "answer": "ACTOR",
+    "breakdown": "WORKSHOP -> f[ACTOR]y ",
+    "enumeration": "(5)",
     "hints": {
-      "definition": "The definition is at the start of the clue.",
-      "indicator": "'Maintains' signals containment.",
-      "fodder": "Think of a word for comedian and a single letter for surprise."
+      "definition": "The definition in this clue is 'Part owner'",
+      "indicator": "The indicator in this clue is 'interior', a selection indicator",
+      "fodder": "The fodder in this clue is a synonym for 'workshop'."
     }
   },
   {
