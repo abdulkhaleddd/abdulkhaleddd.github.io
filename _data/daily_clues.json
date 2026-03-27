@@ -1,24 +1,24 @@
 [
   {
-    "clue": "Part owner of workshop's interior? (5)",
-    "answer": "ACTOR",
-    "breakdown": "WORKSHOP -> f[ACTOR]y ",
-    "enumeration": "(5)",
+    "clue": "Key returned in hotel sign-out (4)",
+    "answer": "ISLE",
+    "breakdown": "[hotEL SIgn-out]<",
+    "enumeration": "(4)",
     "hints": {
-      "definition": "The definition in this clue is 'Part owner'",
-      "indicator": "The indicator in this clue is 'interior', a selection indicator",
-      "fodder": "The fodder in this clue is a synonym for 'workshop'."
+      "definition": "The definition in this clue is 'Key'",
+      "indicator": "The indicators in this clue are 'returned', a reversal indicator, and 'in', a hidden word indicator",
+      "fodder": "The fodder in this clue is the words 'hotel sign-out'"
     }
   },
-  {
-    "clue": "Pressure wound essentially covered by bandage (6)",
-    "answer": "DURESS",
-    "breakdown": "D{U}RESS — wound essentially (middle letter) covered by dress (bandage)",
-    "enumeration": "(6)",
+    {
+    "clue": "Standing alone at out-of-order urinals (7)",
+    "answer": "INSULAR",
+    "breakdown": "(URINALS*)",
+    "enumeration": "(7)",
     "hints": {
-      "definition": "The definition is at the start of the clue.",
-      "indicator": "'Essentially' signals a middle letter; 'covered by' signals containment.",
-      "fodder": "Think of a word for bandage and the middle letter of 'wound'."
+      "definition": "The definition in this clue is 'Standing alone'",
+      "indicator": "The indicator in this clue is 'out-of-order', an anagram indicator",
+      "fodder": "The fodder in this clue is the word 'urinals'"
     }
   },
 ]
