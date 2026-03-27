@@ -31,6 +31,7 @@ permalink: /solutions/solution-003/
   <div class="solution-entry">
     <span class="solution-number">8</span>
     <div class="solution-content">
+      <span class="solution-theme-tag">Theme</span>
       <span class="solution-answer">POVERTY</span>
       <span class="solution-clue">Want poetry's tense to shift while framing verse (7)</span>
       <span class="solution-breakdown">(PO{V}ER[T]Y)* — shift T in poetry, put it around (V)erse</span>
@@ -67,6 +68,7 @@ permalink: /solutions/solution-003/
   <div class="solution-entry">
     <span class="solution-number">13</span>
     <div class="solution-content">
+      <span class="solution-theme-tag">Theme</span>
       <span class="solution-answer">CREDO</span>
       <span class="solution-clue">Persuasion read, lacking leading character's boring company (5)</span>
       <span class="solution-breakdown">C{RE[a]D}O — READ without A inserted in CO (company)</span>
@@ -162,6 +164,7 @@ permalink: /solutions/solution-003/
   <div class="solution-entry">
     <span class="solution-number">1</span>
     <div class="solution-content">
+      <span class="solution-theme-tag">Theme</span>
       <span class="solution-answer">CHOKE</span>
       <span class="solution-clue">Close chapter and endorse first part of Emma (5)</span>
       <span class="solution-breakdown">CH + OK + E — (CH)apter + OK (endorse) + E (first part of Emma)</span>
@@ -252,6 +255,7 @@ permalink: /solutions/solution-003/
   <div class="solution-entry">
     <span class="solution-number">19</span>
     <div class="solution-content">
+      <span class="solution-theme-tag">Theme</span>
       <span class="solution-answer">VILLAGE</span>
       <span class="solution-clue">Hamlet's complex, evil, lying about upset girl (7)</span>
       <span class="solution-breakdown">(EVIL)* {+} [GAL]&lt; -> VIL{LAG}E — anagram of EVIL around reversal of GAL (girl)</span>
@@ -261,6 +265,7 @@ permalink: /solutions/solution-003/
   <div class="solution-entry">
     <span class="solution-number">21</span>
     <div class="solution-content">
+      <span class="solution-theme-tag">Theme</span>
       <span class="solution-answer">SWOON</span>
       <span class="solution-clue">Drop show's curtains before Othello's gutted one's stomach (5)</span>
       <span class="solution-breakdown">S[ho]W + O[thell]O + N — outer letters of show + outer letters of Othello + center of one</span>
@@ -270,6 +275,7 @@ permalink: /solutions/solution-003/
   <div class="solution-entry">
     <span class="solution-number">22</span>
     <div class="solution-content">
+      <span class="solution-theme-tag">Theme</span>
       <span class="solution-answer">SORRY</span>
       <span class="solution-clue">Sad beginning of Sense and Sensibility ultimately enthralling as an alternative reading? (5)</span>
       <span class="solution-breakdown">S{OR + R}Y — beginning of (S)ense and end of Sensibilit(y) enthralling OR (alternative) + (R)eading -> DBE (3 R's)</span>
