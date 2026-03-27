@@ -18,15 +18,9 @@ permalink: /daily/
       <p class="daily-clue-text" id="daily-clue"></p>
     </div>
 
-    <div class="daily-input-row">
-      <input
-        type="text"
-        id="daily-input"
-        class="daily-input"
-        placeholder="Your answer..."
-        autocomplete="off"
-        spellcheck="false"
-      />
+    <div class="daily-boxes-area" id="daily-boxes-area"></div>
+
+    <div class="daily-btn-row">
       <button class="daily-btn" id="daily-check" onclick="checkAnswer()">Check</button>
     </div>
 
@@ -63,14 +57,10 @@ permalink: /daily/
     margin-bottom: 1.5rem;
   }
 
-  article.single-post.featured {
-  padding-bottom: 2.5rem;
-}
-
-.daily-widget {
-  max-width: 520px;
-  margin-bottom: 1rem;
-}
+  .daily-widget {
+    max-width: 560px;
+    margin-bottom: 1rem;
+  }
 
   .daily-clue-box {
     background: var(--paper-dark);
@@ -87,35 +77,82 @@ permalink: /daily/
     margin: 0;
   }
 
-  .daily-input-row {
+  /* LETTER BOXES */
+  .daily-boxes-area {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
-  .daily-input {
-    flex: 1;
+  .daily-word-group {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .daily-word-gap {
+    width: 0.6rem;
+  }
+
+  .daily-hyphen {
     font-family: 'Crimson Text', serif;
-    font-size: 1.05rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 0.5rem 0.75rem;
+    font-size: 1.2rem;
+    color: var(--ink-faint);
+    display: flex;
+    align-items: center;
+    padding: 0 0.1rem;
+  }
+
+  .daily-letter-box {
+    width: 2.2rem;
+    height: 2.6rem;
     border: 1px solid var(--paper-darker);
     background: var(--paper);
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
     color: var(--ink);
     outline: none;
     transition: border-color 0.2s;
+    padding: 0;
+    caret-color: var(--accent);
   }
 
-  .daily-input:focus {
+  .daily-letter-box:focus {
     border-color: var(--sepia);
   }
 
-  .daily-input::placeholder {
-    text-transform: none;
-    letter-spacing: normal;
+  .daily-letter-box.correct {
+    border-color: #4a7c4f;
+    background: rgba(74, 124, 79, 0.08);
+  }
+
+  .daily-letter-box.incorrect {
+    border-color: var(--accent);
+    background: rgba(139, 26, 26, 0.05);
+  }
+
+  .daily-letter-box.revealed {
+    border-color: var(--sepia-light);
     color: var(--ink-faint);
-    opacity: 0.5;
+    background: var(--paper-dark);
+  }
+
+  @media (max-width: 480px) {
+    .daily-letter-box {
+      width: 1.8rem;
+      height: 2.2rem;
+      font-size: 1rem;
+    }
+    .daily-word-gap { width: 0.4rem; }
+  }
+
+  .daily-btn-row {
+    margin-bottom: 0.75rem;
   }
 
   .daily-btn {
@@ -251,15 +288,15 @@ permalink: /daily/
   (function() {
     var clues = {{ site.data.daily_clues | jsonify }};
 
-    // Pick clue based on date
     var today = new Date();
-    var epoch = new Date(2026, 2, 27); //
+    var epoch = new Date(2026, 2, 27);
     var dayIndex = Math.floor((today - epoch) / 86400000);
     var index = ((dayIndex % clues.length) + clues.length) % clues.length;
     var todayClue = clues[index];
 
-    // Track which hints have been revealed
     var revealedHints = {};
+    var letterInputs = [];
+    var answerLetters = todayClue.answer.replace(/[\s\-]/g, '').split('');
 
     // Display date
     var months = ['January','February','March','April','May','June',
@@ -270,24 +307,132 @@ permalink: /daily/
     // Display clue
     document.getElementById('daily-clue').textContent = todayClue.clue;
 
-    // Enter key submits
-    document.getElementById('daily-input').addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') checkAnswer();
-    });
+    // Parse enumeration to build boxes
+    // e.g. "(4,5)" -> groups of 4 and 5 separated by space
+    // e.g. "(3-6)" -> groups of 3 and 6 separated by hyphen
+    function buildBoxes() {
+      var area = document.getElementById('daily-boxes-area');
+      var enumStr = todayClue.enumeration.replace(/[()]/g, '');
+      // Split on commas and hyphens, keeping the delimiter
+      var parts = enumStr.split(/([,\-])/);
+
+      var globalIndex = 0;
+
+      parts.forEach(function(part, i) {
+        if (part === ',') {
+          // Word gap (space between words)
+          var gap = document.createElement('div');
+          gap.className = 'daily-word-gap';
+          area.appendChild(gap);
+        } else if (part === '-') {
+          // Hyphen separator
+          var hyph = document.createElement('div');
+          hyph.className = 'daily-hyphen';
+          hyph.textContent = '–';
+          area.appendChild(hyph);
+        } else {
+          var count = parseInt(part, 10);
+          if (isNaN(count)) return;
+
+          var group = document.createElement('div');
+          group.className = 'daily-word-group';
+
+          for (var j = 0; j < count; j++) {
+            var inp = document.createElement('input');
+            inp.type = 'text';
+            inp.maxLength = 1;
+            inp.className = 'daily-letter-box';
+            inp.setAttribute('data-index', globalIndex);
+            inp.autocomplete = 'off';
+            inp.spellcheck = false;
+
+            (function(idx) {
+              inp.addEventListener('input', function(e) {
+                var val = this.value.replace(/[^a-zA-Z]/g, '');
+                this.value = val.toUpperCase();
+                // Clear any feedback styling on edit
+                this.classList.remove('correct', 'incorrect');
+                // Auto-advance to next box
+                if (val && idx < letterInputs.length - 1) {
+                  letterInputs[idx + 1].focus();
+                }
+              });
+
+              inp.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && !this.value && idx > 0) {
+                  letterInputs[idx - 1].focus();
+                  letterInputs[idx - 1].value = '';
+                  letterInputs[idx - 1].classList.remove('correct', 'incorrect');
+                  e.preventDefault();
+                }
+                if (e.key === 'Enter') {
+                  checkAnswer();
+                }
+                // Arrow key navigation
+                if (e.key === 'ArrowLeft' && idx > 0) {
+                  letterInputs[idx - 1].focus();
+                  e.preventDefault();
+                }
+                if (e.key === 'ArrowRight' && idx < letterInputs.length - 1) {
+                  letterInputs[idx + 1].focus();
+                  e.preventDefault();
+                }
+              });
+
+              // Select all text on focus for easy overwrite
+              inp.addEventListener('focus', function() {
+                this.select();
+              });
+            })(globalIndex);
+
+            group.appendChild(inp);
+            letterInputs.push(inp);
+            globalIndex++;
+          }
+
+          area.appendChild(group);
+        }
+      });
+
+      // Focus first box
+      if (letterInputs.length > 0) {
+        letterInputs[0].focus();
+      }
+    }
+
+    buildBoxes();
 
     window.checkAnswer = function() {
-      var input = document.getElementById('daily-input').value.trim().toUpperCase();
       var feedback = document.getElementById('daily-feedback');
+      var allFilled = letterInputs.every(function(inp) { return inp.value.length === 1; });
 
-      if (!input) return;
+      if (!allFilled) {
+        feedback.textContent = 'Fill in all the letters first.';
+        feedback.className = 'daily-feedback incorrect';
+        // Focus first empty box
+        for (var i = 0; i < letterInputs.length; i++) {
+          if (!letterInputs[i].value) { letterInputs[i].focus(); break; }
+        }
+        return;
+      }
 
-      var clean = input.replace(/[\s\-]/g, '');
-      var answer = todayClue.answer.replace(/[\s\-]/g, '');
+      var allCorrect = true;
+      letterInputs.forEach(function(inp, i) {
+        if (inp.value.toUpperCase() === answerLetters[i].toUpperCase()) {
+          inp.classList.add('correct');
+          inp.classList.remove('incorrect');
+        } else {
+          inp.classList.add('incorrect');
+          inp.classList.remove('correct');
+          allCorrect = false;
+        }
+      });
 
-      if (clean === answer) {
+      if (allCorrect) {
         feedback.textContent = 'Correct — well solved!';
         feedback.className = 'daily-feedback correct';
-        showAnswer();
+        letterInputs.forEach(function(inp) { inp.disabled = true; });
+        showParsing();
       } else {
         feedback.textContent = 'Not quite — try again.';
         feedback.className = 'daily-feedback incorrect';
@@ -296,13 +441,11 @@ permalink: /daily/
 
     window.showHint = function(type) {
       if (revealedHints[type]) return;
-
       revealedHints[type] = true;
       var hintText = document.getElementById('daily-hint-text');
       var label = type.charAt(0).toUpperCase() + type.slice(1);
       hintText.textContent = label + ': ' + todayClue.hints[type];
 
-      // Mark button as used
       var buttons = document.querySelectorAll('.daily-btn-hint');
       buttons.forEach(function(btn) {
         if (btn.textContent.trim().toLowerCase() === type) {
@@ -314,7 +457,15 @@ permalink: /daily/
     window.revealAnswer = function() {
       document.getElementById('daily-feedback').textContent = '';
       document.getElementById('daily-feedback').className = 'daily-feedback';
-      showAnswer();
+
+      letterInputs.forEach(function(inp, i) {
+        inp.value = answerLetters[i].toUpperCase();
+        inp.classList.remove('correct', 'incorrect');
+        inp.classList.add('revealed');
+        inp.disabled = true;
+      });
+
+      showParsing();
     };
 
     window.revealParsing = function() {
@@ -322,11 +473,11 @@ permalink: /daily/
       document.getElementById('daily-parsing').style.display = 'none';
     };
 
-    function showAnswer() {
+    function showParsing() {
+      document.getElementById('daily-answer-box').style.display = 'block';
       document.getElementById('daily-answer').textContent = todayClue.answer;
       document.getElementById('daily-breakdown').textContent = todayClue.breakdown;
       document.getElementById('daily-breakdown').style.display = 'none';
-      document.getElementById('daily-answer-box').style.display = 'block';
       document.getElementById('daily-parsing').style.display = 'inline-block';
       document.getElementById('daily-reveal').style.display = 'none';
     }
