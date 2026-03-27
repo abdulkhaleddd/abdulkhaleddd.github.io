@@ -145,7 +145,6 @@ nav a:hover, nav a.active { color: var(--accent); }
 
 .post-card.single-post {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
 .featured-badge {
