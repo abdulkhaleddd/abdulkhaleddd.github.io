@@ -355,9 +355,11 @@ permalink: /daily/
                 var val = this.value.replace(/[^a-zA-Z]/g, '');
                 this.value = val.toUpperCase();
                 saveState(false, false);
-                if (val && idx < letterInputs.length - 1) {
-                  letterInputs[idx + 1].focus();
-                }
+if (val) {
+  var next = idx + 1;
+  while (next < letterInputs.length && givenIndices.indexOf(next) !== -1) next++;
+  if (next < letterInputs.length) letterInputs[next].focus();
+}
               });
 
               inp.addEventListener('keydown', function(e) {
