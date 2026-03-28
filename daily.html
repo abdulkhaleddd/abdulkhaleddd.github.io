@@ -30,7 +30,7 @@ permalink: /daily/
       <p class="daily-hint-label">Need a nudge?</p>
       <div class="daily-hint-buttons">
         <button class="daily-btn daily-btn-hint" onclick="showHint('definition')">Definition</button>
-        <button class="daily-btn daily-btn-hint" onclick="showHint('indicator')">Indicators</button>
+        <button class="daily-btn daily-btn-hint" onclick="showHint('indicator')">Indicator</button>
         <button class="daily-btn daily-btn-hint" onclick="showHint('fodder')">Fodder</button>
         <button class="daily-btn daily-btn-hint" id="letter-hint-btn" onclick="revealLetter()">Letter</button>
       </div>
@@ -152,7 +152,6 @@ permalink: /daily/
   .daily-btn-row {
     margin-bottom: 0.75rem;
     text-align: center;
-
   }
 
   .daily-btn {
@@ -303,6 +302,11 @@ permalink: /daily/
     var givenIndices = [];
     var answerLetters = todayClue.answer.replace(/[\s\-]/g, '').split('');
 
+    // localStorage key for today
+    var storageKey = 'daily-clue-' + dayIndex;
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(storageKey) || 'null'); } catch(e) {}
+
     // Display date
     var months = ['January','February','March','April','May','June',
                   'July','August','September','October','November','December'];
@@ -350,6 +354,7 @@ permalink: /daily/
               inp.addEventListener('input', function() {
                 var val = this.value.replace(/[^a-zA-Z]/g, '');
                 this.value = val.toUpperCase();
+                saveState(false, false);
                 if (val && idx < letterInputs.length - 1) {
                   letterInputs[idx + 1].focus();
                 }
@@ -362,6 +367,7 @@ permalink: /daily/
                   if (prev >= 0) {
                     letterInputs[prev].focus();
                     letterInputs[prev].value = '';
+                    saveState(false, false);
                   }
                   e.preventDefault();
                 }
@@ -399,6 +405,46 @@ permalink: /daily/
 
     buildBoxes();
 
+    // Restore saved state
+    if (saved) {
+      if (saved.solved || saved.revealed) {
+        letterInputs.forEach(function(inp, i) {
+          inp.value = answerLetters[i].toUpperCase();
+          inp.classList.add(saved.solved ? 'given' : 'revealed');
+          inp.disabled = true;
+        });
+        showParsing();
+        if (saved.solved) {
+          document.getElementById('daily-feedback').textContent = 'Correct — well solved!';
+          document.getElementById('daily-feedback').className = 'daily-feedback correct';
+        }
+      } else if (saved.letters) {
+        saved.letters.forEach(function(letter, i) {
+          if (letter) letterInputs[i].value = letter;
+        });
+        if (saved.given) {
+          saved.given.forEach(function(idx) {
+            letterInputs[idx].classList.add('given');
+            letterInputs[idx].disabled = true;
+            givenIndices.push(idx);
+          });
+        }
+      }
+    }
+
+    // Save state to localStorage
+    function saveState(solved, revealed) {
+      var letters = letterInputs.map(function(inp) { return inp.value || ''; });
+      try {
+        localStorage.setItem(storageKey, JSON.stringify({
+          letters: letters,
+          given: givenIndices,
+          solved: !!solved,
+          revealed: !!revealed
+        }));
+      } catch(e) {}
+    }
+
     window.checkAnswer = function() {
       var feedback = document.getElementById('daily-feedback');
       var allFilled = letterInputs.every(function(inp) { return inp.value.length === 1; });
@@ -420,6 +466,7 @@ permalink: /daily/
         feedback.textContent = 'Correct — well solved!';
         feedback.className = 'daily-feedback correct';
         letterInputs.forEach(function(inp) { inp.disabled = true; });
+        saveState(true, false);
         showParsing();
       } else {
         feedback.textContent = 'Not quite — try again.';
@@ -432,7 +479,6 @@ permalink: /daily/
       var label = type.charAt(0).toUpperCase() + type.slice(1);
       hintText.textContent = label + ': ' + todayClue.hints[type];
 
-      // Highlight the active button, dim others
       var buttons = document.querySelectorAll('.daily-btn-hint:not(#letter-hint-btn)');
       buttons.forEach(function(btn) {
         if (btn.textContent.trim().toLowerCase() === type) {
@@ -463,6 +509,7 @@ permalink: /daily/
       letterInputs[pick].classList.add('given');
       letterInputs[pick].disabled = true;
       givenIndices.push(pick);
+      saveState(false, false);
 
       var remaining = [];
       for (var j = 0; j < letterInputs.length; j++) {
@@ -488,6 +535,7 @@ permalink: /daily/
         inp.disabled = true;
       });
 
+      saveState(false, true);
       showParsing();
     };
 
