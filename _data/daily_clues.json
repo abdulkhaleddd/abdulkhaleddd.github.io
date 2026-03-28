@@ -51,8 +51,52 @@
     "hints": {
       "definition": "The definition in this clue is 'College official'",
       "indicator": "The indicators in this clue are 'withdrawn', a reversal indicator, 'over', a container indicator, 'unwelcomed', a stretchy deletion indicator, and 'at work', an anagram indicator",
-      "fodder": "The fodder in this clue is the words 'position' and 'ethic'"
+      "fodder": "The fodder in this clue is 'position' and 'ethic'"
     }
+  },
+  {
+  "clue": "Monk errs, outright including me with Ximenes and Araucaria? (8)",
+  "answer": "MONIKERS",
+  "breakdown": "MON{I}K + ER[r]S — 'Monk errs' outright (one R removed), containing I (me)",
+  "enumeration": "(8)",
+  "hints": {
+    "definition": "The definition in this clue is 'Ximenes and Araucaria?'",
+    "indicator": "The indicators in this clue are 'outright', a deletion indicator, and 'including', a container indicator.",
+    "fodder": "The fodder in this clue is 'Monk errs' and 'me'. "
   }
+},
+{
+  "clue": "Dish on gold table (7)",
+  "answer": "PLATEAU",
+  "breakdown": "PLATE + AU — PLATE (dish) + AU (gold)",
+  "enumeration": "(7)",
+  "hints": {
+    "definition": "The definition in this clue is 'table'.",
+    "indicator": "This is a charade — the parts join in order.",
+    "fodder": "The fodder is 'dish' and 'gold'. Think periodic table."
+  }
+},
+{
+  "clue": "Rodents twisting, trapped, having run in blind (4-6)",
+  "answer": "STAR-STRUCK",
+  "breakdown": "[RATS]< -> STAR + ST{R}UCK — reversed rats (rodents) + stuck (trapped) containing R (run)",
+  "enumeration": "(4-6)",
+  "hints": {
+    "definition": "The definition in this clue is 'blind'.",
+    "indicator": "The indicators in this clue are 'twisting', a reversal indicator, and 'having ... in', a container indicator.",
+    "fodder": "The fodder is 'rodents', 'trapped', and 'run'."
+  }
+},
+{
+  "clue": "Regarding the French: a society with energy for liberation (7)",
+  "answer": "RELEASE",
+  "breakdown": "RE + LE + A + S + E — RE (regarding) + LE (the in French) + A + S (society) + E (energy)",
+  "enumeration": "(7)",
+  "hints": {
+    "definition": "The definition in this clue is 'liberation'.",
+    "indicator": "This is a charade — five parts join in order.",
+    "fodder": "Each word in the clue (excluding the definition) contributes a short piece. Think abbreviations and foreign articles."
+  }
+}
 ]
 
