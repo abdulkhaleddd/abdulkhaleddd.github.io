@@ -66,14 +66,14 @@
   }
 },
 {
-  "clue": "Dish on gold table (7)",
-  "answer": "PLATEAU",
-  "breakdown": "PLATE + AU — PLATE (dish) + AU (gold)",
-  "enumeration": "(7)",
+  "clue": "Buffet or rest here? (6)",
+  "answer": "RESORT",
+  "breakdown": "(ORREST)*",
+  "enumeration": "(6)",
   "hints": {
-    "definition": "The definition in this clue is 'table'.",
-    "indicator": "This is a charade — the parts join in order.",
-    "fodder": "The fodder is 'dish' and 'gold'. Think periodic table."
+    "definition": "The definition in this clue is 'Buffet or rest here?', as this is a partial-&lit.",
+    "indicator": "The indicator in this clue is 'buffet', an anagram indicator.",
+    "fodder": "The fodder in this clue is 'or rest'."
   }
 },
 {
