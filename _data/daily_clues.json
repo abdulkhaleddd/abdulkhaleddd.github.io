@@ -96,6 +96,16 @@
     "definition": "The definition in this clue is 'liberation'.",
     "indicator": "This is a charade — five parts join in order.",
     "fodder": "Each word in the clue (excluding the definition) contributes a short piece. Think abbreviations and foreign articles."
+  },
+  {
+  "clue": "Pleasurable actions undressed leads to affair (8)",
+  "answer": "FUNCTION",
+  "breakdown": "FUN + [a]CTION[s] — pleasurable (FUN) + actions with outer letters removed ",
+  "enumeration": "(8)",
+  "hints": {
+    "definition": "The definition in this clue is 'affair'.",
+    "indicator": "The indicator in this clue is 'undressed', a deletion indicator.",
+    "fodder": "The fodder is 'pleasurable' and 'actions'. You will be finding a synonym for one, and using the other as is."
   }
 }
 ]
