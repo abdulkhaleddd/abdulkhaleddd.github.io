@@ -54,17 +54,6 @@
       "fodder": "The fodder in this clue is 'position' and 'ethic'"
     }
   },
-  {
-  "clue": "Monk errs, outright including me with Ximenes and Araucaria? (8)",
-  "answer": "MONIKERS",
-  "breakdown": "MON{I}K + ER[r]S — 'Monk errs' outright (one R removed), containing I (me)",
-  "enumeration": "(8)",
-  "hints": {
-    "definition": "The definition in this clue is 'Ximenes and Araucaria?'",
-    "indicator": "The indicators in this clue are 'outright', a deletion indicator, and 'including', a container indicator.",
-    "fodder": "The fodder in this clue is 'Monk errs' and 'me'. "
-  }
-},
 {
   "clue": "Buffet or rest here? (6)",
   "answer": "RESORT",
@@ -107,6 +96,60 @@
     "definition": "The definition in this clue is 'affair'.",
     "indicator": "The indicator in this clue is 'undressed', a deletion indicator.",
     "fodder": "The fodder is 'pleasurable' and 'actions'. You will be finding a synonym for one, and using the other as is."
+  },
+    {
+  "clue": "Criminals rat a ton, getting tip from informant in Phoenix? (13)",
+  "answer": "CONSTELLATION",
+  "breakdown": "CONS + TELL + A + T{I}ON — CONS (criminals) + TELL (rat) + A + TON with tip from (I)nformant contained",
+  "enumeration": "(13)",
+  "hints": {
+    "definition": "The definition in this clue is 'Phoenix?' '?' acts as a definition-by-example indicator, so think of a greater category 'Pheonix' can belong to.",
+    "indicator": "The indicators in this clue are 'getting tip from', a selection indicator, and 'in', a container indicator.",
+    "fodder": "The fodder is 'criminals', 'rat', 'a', 'ton', and 'informant'. Most parts are synonyms."
+  }
+},
+{
+  "clue": "A route with slippery ice over time gets cold (9)",
+  "answer": "APATHETIC",
+  "breakdown": "A PATH + (I{T}CE)* — A PATH (a route) + ice anagrammed over (T)ime",
+  "enumeration": "(9)",
+  "hints": {
+    "definition": "The definition in this clue is 'cold'.",
+    "indicator": "The indicators in this clue are 'slippery', an anagram indicator, and 'over', a container indicator.",
+    "fodder": "The fodder is 'a route', 'ice', and 'time'."
+  }
+},
+{
+  "clue": "Finished development of his patent (2,3,4)",
+  "answer": "IN THE PAST",
+  "breakdown": "(HISPATENT)* — anagram of 'his patent'",
+  "enumeration": "(2,3,4)",
+  "hints": {
+    "definition": "The definition in this clue is 'Finished'.",
+    "indicator": "The indicator in this clue is 'development of', an anagram indicator.",
+    "fodder": "The fodder in this clue is 'his patent'."
+  }
+},
+{
+  "clue": "Pro GenAI? No, tech's draining energy out from humans (13)",
+  "answer": "ANTHROPOGENIC",
+  "breakdown": "(PROGENAINOT[e]CH)* — anagram of 'pro gen ai no tech' with (E)nergy drained",
+  "enumeration": "(13)",
+  "hints": {
+    "definition": "The definition in this clue is 'from humans'.",
+    "indicator": "The indicators in this clue are 'draining', a deletion indicator, and 'out', an anagram indicator.",
+    "fodder": "The fodder is 'Pro GenAI No tech' and 'energy'. "
+  }
+},
+{
+  "clue": "Bloke extremely eager to meet one escort (9)",
+  "answer": "CHAPERONE",
+  "breakdown": "CHAP + E[age]R + ONE — CHAP (bloke) + outer letters of EAGER + ONE (one)",
+  "enumeration": "(9)",
+  "hints": {
+    "definition": "The definition in this clue is 'escort'.",
+    "indicator": "The indicators in this clue are 'extremely', a selection indicator, and 'to meet', a charade connector.",
+    "fodder": "The fodder is 'bloke', 'eager', and 'one'."
   }
 }
 ]
