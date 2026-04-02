@@ -66,7 +66,7 @@
   }
 },
 {
-  "clue": "Rodents twisting, trapped, having run in blind (4-6)",
+  "clue": "Rodents twisting, trapped, having run in blind (4-6)", 
   "answer": "STAR-STRUCK",
   "breakdown": "[RATS]< -> STAR + ST{R}UCK — reversed rats (rodents) + stuck (trapped) containing R (run)",
   "enumeration": "(4-6)",
@@ -110,17 +110,6 @@
   }
 },
 {
-  "clue": "A route with slippery ice over time gets cold (9)",
-  "answer": "APATHETIC",
-  "breakdown": "A PATH + (I{T}CE)* — A PATH (a route) + ice anagrammed over (T)ime",
-  "enumeration": "(9)",
-  "hints": {
-    "definition": "The definition in this clue is 'cold'.",
-    "indicator": "The indicators in this clue are 'slippery', an anagram indicator, and 'over', a container indicator.",
-    "fodder": "The fodder is 'a route', 'ice', and 'time'."
-  }
-},
-{
   "clue": "Finished development of his patent (2,3,4)",
   "answer": "IN THE PAST",
   "breakdown": "(HISPATENT)* — anagram of 'his patent'",
@@ -151,6 +140,39 @@
     "definition": "The definition in this clue is 'escort'.",
     "indicator": "The indicators in this clue are 'extremely', a selection indicator, and 'to meet', a charade connector.",
     "fodder": "The fodder is 'bloke', 'eager', and 'one'."
+  }
+},
+  {{
+  "clue": "Provoke drummer in odd band (5,2)",
+  "answer": "BRING ON",
+  "breakdown": "B{RINGO}N — Ringo (drummer) in odd letters of band",
+  "enumeration": "(5,2)",
+  "hints": {
+    "definition": "The definition in this clue is 'Provoke'.",
+    "indicator": "The indicators in this clue are 'in', a container indicator, and 'odd', a selection indicator.",
+    "fodder": "The fodder is 'drummer' and 'band'. Think of a famous drummer."
+  }
+},
+{
+  "clue": "Very taken aback about father's heart state (6)",
+  "answer": "LATHER",
+  "breakdown": "[REAL]< -> LA{TH}ER — REAL (very) reversed around TH (father's heart)",
+  "enumeration": "(6)",
+  "hints": {
+    "definition": "The definition in this clue is 'state'.",
+    "indicator": "The indicators in this clue are 'taken aback', a reversal indicator, and 'about', a container indicator.",
+    "fodder": "The fodder is 'very' and 'father'."
+  }
+},
+{
+  "clue": "Chief conservative bestrides horse (5)",
+  "answer": "FOCAL",
+  "breakdown": "FO{C}AL — FOAL (horse) containing C (conservative)",
+  "enumeration": "(5)",
+  "hints": {
+    "definition": "The definition in this clue is 'Chief'.",
+    "indicator": "The indicator in this clue is 'bestrides', a container indicator.",
+    "fodder": "The fodder is 'conservative' and 'horse'."
   }
 }
 ]
