@@ -15,13 +15,22 @@ permalink: /archive/
   <li>
     <span class="date">{{ puzzle.date | date: "%b %Y" }}</span>
     <a href="{{ puzzle.url | relative_url }}">No. {{ puzzle.number }} — {{ puzzle.title }}</a>
-    {% if puzzle.difficulty %}
-    <span class="difficulty" style="margin-left:auto;">
-      {% for i in (1..5) %}
-        {% if i <= puzzle.difficulty %}<span class="pip filled"></span>{% else %}<span class="pip"></span>{% endif %}
-      {% endfor %}
-    </span>
+{% if puzzle.difficulty %}
+<span class="difficulty" style="margin-left:auto;">
+  {% assign full = puzzle.difficulty | floor %}
+  {% assign half_pip = full | plus: 1 %}
+  {% assign diff_str = puzzle.difficulty | append: "" %}
+  {% for i in (1..5) %}
+    {% if i <= full %}
+      <span class="pip filled"></span>
+    {% elsif diff_str contains "." and i == half_pip %}
+      <span class="pip half"></span>
+    {% else %}
+      <span class="pip"></span>
     {% endif %}
+  {% endfor %}
+</span>
+{% endif %}
   </li>
   {% endfor %}
 </ul>
