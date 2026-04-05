@@ -7,11 +7,22 @@ layout: default
     No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%d %B %Y" }} &ensp;·&ensp; {{ page.grid_size | default: "15×15" }}
   </div>
   <h1 class="post-title">{{ page.title }}</h1>
-{% if page.difficulty_pips %}
+{% if page.difficulty %}
 <div class="difficulty-row">
   Difficulty:
   <span class="difficulty">
-    {{ page.difficulty_pips }}
+    {% assign full = page.difficulty | floor %}
+    {% assign half_pip = full | plus: 1 %}
+    {% assign diff_str = page.difficulty | append: "" %}
+    {% for i in (1..5) %}
+      {% if i <= full %}
+        <span class="pip filled"></span>
+      {% elsif diff_str contains "." and i == half_pip %}
+        <span class="pip half"></span>
+      {% else %}
+        <span class="pip"></span>
+      {% endif %}
+    {% endfor %}
   </span>
 </div>
 {% endif %}
