@@ -18,17 +18,22 @@ title: Home
 
     <h2 class="post-title">
       <a href="{{ puzzle.url | relative_url }}">{{ puzzle.title }}</a>
-      {% if puzzle.difficulty %}
-      <span class="difficulty">
-        {% for i in (1..5) %}
-          {% if i <= puzzle.difficulty %}
-            <span class="pip filled"></span>
-          {% else %}
-            <span class="pip"></span>
-          {% endif %}
-        {% endfor %}
-      </span>
-      {% endif %}
+{% if puzzle.difficulty %}
+<span class="difficulty">
+  {% assign full = puzzle.difficulty | floor %}
+  {% assign half_pip = full | plus: 1 %}
+  {% assign diff_str = puzzle.difficulty | append: "" %}
+  {% for i in (1..5) %}
+    {% if i <= full %}
+      <span class="pip filled"></span>
+    {% elsif diff_str contains "." and i == half_pip %}
+      <span class="pip half"></span>
+    {% else %}
+      <span class="pip"></span>
+    {% endif %}
+  {% endfor %}
+</span>
+{% endif %}
     </h2>
 
     {% if puzzle.description %}
