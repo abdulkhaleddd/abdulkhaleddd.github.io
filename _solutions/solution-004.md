@@ -14,7 +14,7 @@ permalink: /solutions/solution-004/
     <div class="solution-content">
       <span class="solution-answer">AGENT</span>
       <span class="solution-clue">A toff is getting <u>broker</u> (5)</span>
-      <span class="solution-breakdown">A + GENT — A + gent (toff)</span>
+      <span class="solution-breakdown">A + GENT — A + gent (toff). toff (n.) a person of the upper classes, esp wealthy and smartly dressed</span>
     </div>
   </div>
 
@@ -22,8 +22,8 @@ permalink: /solutions/solution-004/
     <span class="solution-number">8</span>
     <div class="solution-content">
       <span class="solution-answer">APPARATUS</span>
-      <span class="solution-clue">A quiet job preserves absolute 'hush', rejecting outsiders in <u>organisation</u> (9)</span>
-      <span class="solution-breakdown">A + P + PAR{A}T + [h]US[h] — A + P (quiet) + PART (job) with (a)rea in + hush without outside letters</span>
+      <span class="solution-clue">Outfit, one worn by a quiet character oddly lacking purse (9)</span>
+      <span class="solution-breakdown">A + P + PAR{A}T + pUrSe — A + P (quiet) + PART (character) with one (a) in + even letters of purse</span>
     </div>
   </div>
 
@@ -31,8 +31,8 @@ permalink: /solutions/solution-004/
     <span class="solution-number">10</span>
     <div class="solution-content">
       <span class="solution-answer">TRADITION</span>
-      <span class="solution-clue"><u>Feature keeping England's latest icon non-Catholic?</u> (9)</span>
-      <span class="solution-breakdown">TRA{D}IT + I[c]ON — feature (trait) containing last letter of England + icon without (C)atholic</span>
+      <span class="solution-clue"><u>Feature keeping domain's crown — Anglicans, essentially, acting?</u> (9)</span>
+      <span class="solution-breakdown">TRA{D}IT + I[c]ON — feature (trait) containing crown of (d)omain + central letter of angl(I)cans + on (acting)</span>
     </div>
   </div>
 
@@ -41,7 +41,7 @@ permalink: /solutions/solution-004/
     <div class="solution-content">
       <span class="solution-answer">SEGUE</span>
       <span class="solution-clue"><u>Continue on</u> with charge, protecting sources of evidence gathered (5)</span>
-      <span class="solution-breakdown">S{EG}UE — sue (charge) around first letters of evidence and gathered</span>
+      <span class="solution-breakdown">S{EG}UE — sue (charge) around first letters of evidence and gathered. def: segue (v.i.) to proceed without pause, to follow on</span>
     </div>
   </div>
 
@@ -58,8 +58,8 @@ permalink: /solutions/solution-004/
     <span class="solution-number">13</span>
     <div class="solution-content">
       <span class="solution-answer">ESPIONAGE</span>
-      <span class="solution-clue">Fake pigeons eager to start <u>spying</u> (9)</span>
-      <span class="solution-breakdown">(PIGEONS + [ar]E)* — anagram of pigeons with first letter of (e)ager</span>
+      <span class="solution-clue">Fake pigeons are eager to start <u>spying</u> (9)</span>
+      <span class="solution-breakdown">(PIGEONS + A + E)* — anagram of pigeons with (a)re + first letter of (e)ager</span>
     </div>
   </div>
 
@@ -76,7 +76,7 @@ permalink: /solutions/solution-004/
     <span class="solution-number">16</span>
     <div class="solution-content">
       <span class="solution-answer">STASH</span>
-      <span class="solution-clue"><u>Store</u>'s seeking to advertise some hamburgers primarily (5)</span>
+      <span class="solution-clue"><u>Store</u>'s seeking to advertise some hamburgers at the front (5)</span>
       <span class="solution-breakdown">S + T + A + S + H — first letters of seeking to advertise some hamburgers</span>
     </div>
   </div>
@@ -85,8 +85,8 @@ permalink: /solutions/solution-004/
     <span class="solution-number">18</span>
     <div class="solution-content">
       <span class="solution-answer">AT IT</span>
-      <span class="solution-clue">A bird's <u>busy as a bee</u> (2,2)</span>
-      <span class="solution-breakdown">A + TIT — A + bird (tit)</span>
+      <span class="solution-clue">A bird's <u>mating</u> (2,2)</span>
+      <span class="solution-breakdown">A + TIT — A + bird (tit). def: at it (prep.) having sexual intercourse (informal)</span>
     </div>
   </div>
 
@@ -103,8 +103,8 @@ permalink: /solutions/solution-004/
     <span class="solution-number">23</span>
     <div class="solution-content">
       <span class="solution-answer">ADD UP</span>
-      <span class="solution-clue"><u>Hold water</u> (a low-grade drink without ice) with cup, removing lid (3,2)</span>
-      <span class="solution-breakdown">A + D + D[rink] + [c]UP — a + low grade (D) + drink without ice (drink - rink) + cup with first letter removed</span>
+      <span class="solution-clue"><u>Hold water</u> (a low-grade drink when missing ice) with less cold cup (3,2)</span>
+      <span class="solution-breakdown">A + D + D[rink] + [c]UP — a + low grade (D) + drink without ice (drink - rink) + cup with (c) removed</span>
     </div>
   </div>
 
@@ -121,8 +121,8 @@ permalink: /solutions/solution-004/
     <span class="solution-number">26</span>
     <div class="solution-content">
       <span class="solution-answer">APATHETIC</span>
-      <span class="solution-clue">Afternoon walk with slippery ice outside, temperature's <u>cold</u> (9)</span>
-      <span class="solution-breakdown">A + PATH + (I{T}CE)* — (A)fternoon + PATH (walk) + anagram of ICE around (T)emperature</span>
+      <span class="solution-clue">A walk with slippery ice outside, temperature's <u>cold</u> (9)</span>
+      <span class="solution-breakdown">A + PATH + (I{T}CE)* — A + PATH (walk) + anagram of ICE around (T)emperature</span>
     </div>
   </div>
 
@@ -154,7 +154,7 @@ permalink: /solutions/solution-004/
     <div class="solution-content">
       <span class="solution-answer">DEPART</span>
       <span class="solution-clue"><u>Evacuate</u>, being stuck in lift after power outage? (6)</span>
-      <span class="solution-breakdown">[TRA[p]PED]&lt; -> DEPART — stuck (trapped) in lift (reversal) after power outage (remove P)</span>
+      <span class="solution-breakdown">[TRA[p]PED]&lt; -> DEPART — stuck (trapped) in lift (reversal) after power outage (remove p)</span>
     </div>
   </div>
 
@@ -207,7 +207,7 @@ permalink: /solutions/solution-004/
     <span class="solution-number">7</span>
     <div class="solution-content">
       <span class="solution-answer">TAILOR</span>
-      <span class="solution-clue"><u>Customize</u> part of ChatGPT, "AI Lord" (6)</span>
+      <span class="solution-clue"><u>Customise</u> part of ChatGPT, "AI Lord" (6)</span>
       <span class="solution-breakdown">[chatgpT, "AI LORd"] — hidden in the preceding words</span>
     </div>
   </div>
@@ -253,7 +253,7 @@ permalink: /solutions/solution-004/
     <div class="solution-content">
       <span class="solution-answer">FATHOM</span>
       <span class="solution-clue"><u>Plumb</u> faucet's opening, almost in (6)</span>
-      <span class="solution-breakdown">F + AT HOM[e] — first letter of faucet + 'at home' (in) cut short</span>
+      <span class="solution-breakdown">F + AT HOM[e] — first letter of faucet + 'at home' (in) cut short. def: plumb (v.t.) to pierce the depth of, fathom, by eye or understanding</span>
     </div>
   </div>
 
@@ -262,7 +262,7 @@ permalink: /solutions/solution-004/
     <div class="solution-content">
       <span class="solution-answer">IN A ROW</span>
       <span class="solution-clue">I succeeded in comeback, capturing a rook, <u>one after another</u> (2,1,3)</span>
-      <span class="solution-breakdown">I + [WON]&lt; -> I N{A + R}OW — I + WON reversed over A + (R)ook</span>
+      <span class="solution-breakdown">I + [WON]&lt; -> I N{A + R}OW — I + WON reversed over A (one) + (R)ook</span>
     </div>
   </div>
 
