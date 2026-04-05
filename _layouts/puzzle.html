@@ -7,20 +7,24 @@ layout: default
     No. {{ page.number }} &ensp;·&ensp; {{ page.date | date: "%d %B %Y" }} &ensp;·&ensp; {{ page.grid_size | default: "15×15" }}
   </div>
   <h1 class="post-title">{{ page.title }}</h1>
-  {% if page.difficulty %}
-  <div class="difficulty-row">
-    Difficulty:
-    <span class="difficulty">
-      {% for i in (1..5) %}
-        {% if i <= page.difficulty %}
-          <span class="pip filled"></span>
-        {% else %}
-          <span class="pip"></span>
-        {% endif %}
-      {% endfor %}
-    </span>
-  </div>
-  {% endif %}
+{% if page.difficulty %}
+<div class="difficulty-row">
+  Difficulty:
+  <span class="difficulty">
+    {% assign full = page.difficulty | floor %}
+    {% assign has_half = page.difficulty | modulo: 1 %}
+    {% for i in (1..5) %}
+      {% if i <= full %}
+        <span class="pip filled"></span>
+      {% elsif has_half != 0 and i == full | plus: 1 %}
+        <span class="pip half"></span>
+      {% else %}
+        <span class="pip"></span>
+      {% endif %}
+    {% endfor %}
+  </span>
+</div>
+{% endif %}
   {% assign parts = content | split: '<!--notes-->' %}
   {% if parts[0] != "" %}
   <div class="post-excerpt">{{ parts[0] }}</div>
