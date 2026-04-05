@@ -263,6 +263,11 @@ h1.post-title { font-size: 2rem; margin-bottom: 1rem; }
 
 .pip.filled { background: var(--accent); border-color: var(--accent); }
 
+.pip.half {
+  background: linear-gradient(to right, var(--accent) 50%, var(--paper-darker) 50%);
+  border-color: var(--accent);
+}
+
 /* PUZZLE EMBED */
 .puzzle-embed-box {
   background: var(--paper-dark);
