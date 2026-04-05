@@ -12,11 +12,12 @@ layout: default
   Difficulty:
   <span class="difficulty">
     {% assign full = page.difficulty | floor %}
+    {% assign half_pip = full | plus: 1 %}
     {% assign diff_str = page.difficulty | append: "" %}
     {% for i in (1..5) %}
       {% if i <= full %}
         <span class="pip filled"></span>
-      {% elsif diff_str contains "." and i == full | plus: 1 %}
+      {% elsif diff_str contains "." and i == half_pip %}
         <span class="pip half"></span>
       {% else %}
         <span class="pip"></span>
