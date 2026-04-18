@@ -1,7 +1,7 @@
 ---
 layout: solution
 title: "Doljanchi"
-number: 1
+number: 5
 date: 2026-04-18
 puzzle_slug: "puzzle-005"
 permalink: /solutions/solution-005/
