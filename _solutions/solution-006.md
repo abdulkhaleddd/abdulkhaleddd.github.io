@@ -3,8 +3,8 @@ layout: solution
 title: "Untitled No. 5"
 number: 6
 date: 2026-05-10
-puzzle_slug: "puzzle-06"
-permalink: /solutions/solution-06/
+puzzle_slug: "puzzle-006"
+permalink: /solutions/solution-006/
 ---
 <div class="solutions-section">
   <h2 class="solutions-direction">Across</h2>
