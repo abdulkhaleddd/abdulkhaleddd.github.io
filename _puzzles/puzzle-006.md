@@ -1,7 +1,7 @@
 ---
 layout: puzzle
-title: "Untitled No. 5"
-number: 5
+title: "Untitled No. 6"
+number: 6
 date: 2026-05-10
 grid_size: "15×15"
 difficulty: 3
