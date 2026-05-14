@@ -1,6 +1,6 @@
 ---
 layout: solution
-title: "Untitled No. 5"
+title: "Untitled No. 6"
 number: 6
 date: 2026-05-10
 puzzle_slug: "puzzle-006"
